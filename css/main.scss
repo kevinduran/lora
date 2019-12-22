@@ -1,14 +1,14 @@
 //--------------------------------------- RESET
 
 html {
-    box-sizing: border-box;
-    font-size: 16px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body,
@@ -21,39 +21,35 @@ h6,
 p,
 ol,
 ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
-
-
-
 
 //--------------------------------------- NAVIGATION
 #nav {
-    height: 100px;
-    border: 1px solid red;
-    display: flex;
+  height: 100px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
 }
 
 .nav_btn {
-    border: 1px solid blue;
-    width: 20px;
-    height: 20px;
-
-
+  border: 1px solid blue;
+  width: 20px;
+  height: 20px;
 }
 
 .nav_overlay {
-    display: none;
+  display: none;
 }
