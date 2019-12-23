@@ -169,7 +169,7 @@ img {
 /* -----------------------------ABOUT----------------------------*/
 #about {
   background-color: $nav;
-  height: 100vh;
+  height: 150vh;
 }
 .about_container-img {
   text-align: center;
@@ -207,6 +207,10 @@ img {
   }
   h2 {
     text-align: center;
+    font-size: 1.6em;
+    font-family: "Inria Serif", serif;
+    text-transform: uppercase;
+    color: #7c857e;
   }
   h3 {
     text-align: center;
@@ -216,9 +220,11 @@ img {
     font-family: "Dancing Script", cursive;
   }
   p {
-    margin: 40px;
-    font-size: 1.3em;
-    line-height: 1.9em;
+    margin: 50px 50px 50px 70px;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em;
+    color: #353936;
   }
 }
 /* -----------------------------ABOUT----------------------------*/
