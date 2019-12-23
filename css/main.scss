@@ -101,7 +101,8 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
-    top: 30%;
+    top: 25%;
+    background-color: rgba(1, 1, 1, 0.6)
 }
 
 .header_logo {
@@ -114,7 +115,7 @@ body {
 
 .header_logo-two {
     color: #FC6E51;
-    font-size: 2em;
+    font-size: 2.5em;
 
 }
 
@@ -130,7 +131,7 @@ body {
     letter-spacing: .08em;
     text-transform: uppercase;
     position: relative;
-    top: 35%;
+    top: 30%;
     left: 25%;
     display: block;
     transition: background-color .6s ease;
