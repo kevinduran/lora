@@ -39,6 +39,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+.main_color {
+  background-color: $about-main;
+}
 
 /* -----------------------------NAVIGATION----------------------------*/
 #nav {
@@ -169,7 +172,7 @@ img {
 /* -----------------------------ABOUT----------------------------*/
 #about {
   background-color: $nav;
-  height: 150vh;
+  height: 170vh;
 }
 .about_container-img {
   text-align: center;
@@ -180,7 +183,7 @@ img {
 }
 .about_img-one {
   position: relative;
-  margin-top: 200px;
+  margin: 200px 0 80px 0;
   z-index: 3;
 }
 .about_img-two {
@@ -195,9 +198,9 @@ img {
   left: 40%;
   z-index: 1;
 }
+
 .about_container-word {
-  background-color: $about-main;
-  margin-top: 30px;
+  padding-top: 60px;
 
   h1 {
     text-align: center;
@@ -228,3 +231,17 @@ img {
   }
 }
 /* -----------------------------ABOUT----------------------------*/
+/* -----------------------------EXPERIENCE----------------------------*/
+#experience {
+  height: 100vh;
+  background: url(img/experience.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.experience_word {
+  padding-top: 130px;
+}
+/* -----------------------------EXPERIENCE----------------------------*/
