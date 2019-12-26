@@ -244,12 +244,63 @@ img {
 
 .experience_container-word {
   padding-top: 190px;
+  h1 {
+    text-align: center;
+    color: $header-main;
+    font-size: 3em;
+    font-family: "Dancing Script", cursive;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.6em;
+    font-family: "Inria Serif", serif;
+    text-transform: uppercase;
+    color: #7c857e;
+  }
+  h3 {
+    text-align: center;
+    color: $header-main;
+    font-size: 3em;
+    font-weight: lighter;
+    font-family: "Dancing Script", cursive;
+  }
 }
 /* -----------------------------EXPERIENCE----------------------------*/
 /* -----------------------------MENU----------------------------*/
 .menu_container {
   margin-top: 50px;
   background-color: $nav;
+}
+.menu_container-word {
+  padding-top: 60px;
+
+  h1 {
+    text-align: center;
+    color: $header-main;
+    font-size: 3em;
+    font-family: "Dancing Script", cursive;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.6em;
+    font-family: "Inria Serif", serif;
+    text-transform: uppercase;
+    color: #7c857e;
+  }
+  h3 {
+    text-align: center;
+    color: $header-main;
+    font-size: 3em;
+    font-weight: lighter;
+    font-family: "Dancing Script", cursive;
+  }
+  p {
+    margin: 50px 50px 50px 70px;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em;
+    color: #353936;
+  }
 }
 
 .menu_container-sub {
@@ -316,12 +367,28 @@ img {
 /* -----------------------------RES----------------------------*/
 
 #res {
-  height: 100vh;
-  background: url(img/experience.jpg) no-repeat center center fixed;
+  height: 80vh;
+  background: url(img/res.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  border-bottom: $header-main 10px solid;
+  .about_container-word {
+    background-color: rgba(1, 1, 1, 0.6);
+    height: 79vh;
+  }
+
+  button {
+    position: relative;
+    top: 5%;
+  }
 }
 
 /* -----------------------------RES----------------------------*/
+/* -----------------------------CONTACT----------------------------*/
+#contact {
+  background-color: #282828;
+  color: $nav;
+}
+/* -----------------------------CONTACT----------------------------*/

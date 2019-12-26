@@ -259,11 +259,69 @@ img {
   padding-top: 190px;
 }
 
+.experience_container-word h1 {
+  text-align: center;
+  color: rgba(237, 161, 73, 0.8);
+  font-size: 3em;
+  font-family: "Dancing Script", cursive;
+}
+
+.experience_container-word h2 {
+  text-align: center;
+  font-size: 1.6em;
+  font-family: "Inria Serif", serif;
+  text-transform: uppercase;
+  color: #7c857e;
+}
+
+.experience_container-word h3 {
+  text-align: center;
+  color: rgba(237, 161, 73, 0.8);
+  font-size: 3em;
+  font-weight: lighter;
+  font-family: "Dancing Script", cursive;
+}
+
 /* -----------------------------EXPERIENCE----------------------------*/
 /* -----------------------------MENU----------------------------*/
 .menu_container {
   margin-top: 50px;
   background-color: #f5f5f5;
+}
+
+.menu_container-word {
+  padding-top: 60px;
+}
+
+.menu_container-word h1 {
+  text-align: center;
+  color: rgba(237, 161, 73, 0.8);
+  font-size: 3em;
+  font-family: "Dancing Script", cursive;
+}
+
+.menu_container-word h2 {
+  text-align: center;
+  font-size: 1.6em;
+  font-family: "Inria Serif", serif;
+  text-transform: uppercase;
+  color: #7c857e;
+}
+
+.menu_container-word h3 {
+  text-align: center;
+  color: rgba(237, 161, 73, 0.8);
+  font-size: 3em;
+  font-weight: lighter;
+  font-family: "Dancing Script", cursive;
+}
+
+.menu_container-word p {
+  margin: 50px 50px 50px 70px;
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2em;
+  color: #353936;
 }
 
 .menu_container-sub {
@@ -341,10 +399,28 @@ img {
 /* -----------------------------MENU----------------------------*/
 /* -----------------------------RES----------------------------*/
 #res {
-  height: 100vh;
-  background: url(img/experience.jpg) no-repeat center center fixed;
+  height: 80vh;
+  background: url(img/res.jpg) no-repeat center center fixed;
   background-size: cover;
+  border-bottom: rgba(237, 161, 73, 0.8) 10px solid;
+}
+
+#res .about_container-word {
+  background-color: rgba(1, 1, 1, 0.6);
+  height: 79vh;
+}
+
+#res button {
+  position: relative;
+  top: 5%;
 }
 
 /* -----------------------------RES----------------------------*/
+/* -----------------------------CONTACT----------------------------*/
+#contact {
+  background-color: #282828;
+  color: #f5f5f5;
+}
+
+/* -----------------------------CONTACT----------------------------*/
 /*# sourceMappingURL=main.css.map */
