@@ -52,6 +52,14 @@ img {
   padding-bottom: 30px !important;
 }
 
+.center {
+  text-align: center !important;
+}
+
+.bold-white {
+  font-weight: bolder;
+}
+
 /* -----------------------------NAVIGATION----------------------------*/
 #nav {
   -ms-flex-pack: distribute;
@@ -441,6 +449,7 @@ img {
 #contact h2 {
   font-family: "Inria Serif" bold;
   padding: 90px 0 30px 0;
+  letter-spacing: 2px;
 }
 
 #contact h3 {
@@ -450,6 +459,28 @@ img {
 #contact a {
   margin-top: 30px;
   color: #f5f5f5;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+
+#contact .input {
+  background: transparent;
+  border: 1px solid #f5f5f5;
+  width: 100%;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  height: 8vh;
+  padding-left: 30px;
+  color: #f5f5f5;
+}
+
+#contact .submit {
+  text-align: right;
+  display: block;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-bottom: 100px;
 }
 
 /* -----------------------------CONTACT----------------------------*/
