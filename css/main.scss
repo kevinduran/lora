@@ -42,6 +42,15 @@ img {
 .main_color {
   background-color: $about-main;
 }
+.margin-top {
+  padding-top: 90px;
+}
+.margin-bottom--large {
+  padding-bottom: 80px !important;
+}
+.margin-bottom {
+  padding-bottom: 30px !important;
+}
 
 /* -----------------------------NAVIGATION----------------------------*/
 #nav {
@@ -390,5 +399,19 @@ img {
 #contact {
   background-color: #282828;
   color: $nav;
+  .contact_container {
+    padding: 25px;
+  }
+  h2 {
+    font-family: "Inria Serif" bold;
+    padding: 90px 0 30px 0;
+  }
+  h3 {
+    padding: 5px 0;
+  }
+  a {
+    margin-top: 30px;
+    color: $nav;
+  }
 }
 /* -----------------------------CONTACT----------------------------*/
