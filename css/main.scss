@@ -7,12 +7,14 @@ $about-main: #fbf6f0;
 html {
   box-sizing: border-box;
   font-size: 16px;
+
 }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+
 }
 
 body,
@@ -39,21 +41,27 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .main_color {
   background-color: $about-main;
 }
+
 .margin-top {
   padding-top: 90px;
 }
+
 .margin-bottom--large {
   padding-bottom: 80px !important;
 }
+
 .margin-bottom {
   padding-bottom: 30px !important;
 }
+
 .center {
   text-align: center !important;
 }
+
 .bold-white {
   font-weight: bolder;
 }
@@ -67,17 +75,20 @@ img {
   height: 13vh;
   position: fixed;
   width: 100%;
-  background-color: $nav;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
 
+
+
 .nav_btn {
   width: 40px;
+
   span {
-    height: 2.6px;
-    width: 30px;
+    height: 3px;
+    width: 31px;
     margin-bottom: 9.5px;
-    background-color: black;
+    background-color: $nav;
     display: block;
     position: relative;
     top: 30%;
@@ -88,6 +99,7 @@ img {
   h1 {
     font-family: "Montserrat Subrayada", sans-serif;
     font-size: 2.9em;
+    color: $nav;
   }
 }
 
@@ -95,7 +107,8 @@ img {
   i {
     position: relative;
     top: 25%;
-    font-size: 1.4em;
+    font-size: 1.8em;
+    color: $nav;
   }
 }
 
@@ -121,7 +134,7 @@ img {
   flex-wrap: wrap;
   position: relative;
   top: 38%;
-  background-color: rgba(1, 1, 1, 0.6);
+  background-color: rgba(1, 1, 1, 0.4);
 }
 
 .header_logo {
@@ -182,30 +195,36 @@ img {
     }
   }
 }
+
 /* -----------------------------ABOUT----------------------------*/
 #about {
   background-color: $nav;
   height: 170vh;
 }
+
 .about_container-img {
   text-align: center;
   position: relative;
   max-width: 600px;
 }
+
 .about_img {
   width: 200px;
 }
+
 .about_img-one {
   position: relative;
   margin: 200px 0 80px 0;
   z-index: 3;
 }
+
 .about_img-two {
   position: absolute;
   top: 40%;
   left: 10%;
   z-index: 2;
 }
+
 .about_img-three {
   position: absolute;
   top: 30%;
@@ -222,6 +241,7 @@ img {
     font-size: 3em;
     font-family: "Dancing Script", cursive;
   }
+
   h2 {
     text-align: center;
     font-size: 1.6em;
@@ -229,6 +249,7 @@ img {
     text-transform: uppercase;
     color: #7c857e;
   }
+
   h3 {
     text-align: center;
     color: $header-main;
@@ -236,6 +257,7 @@ img {
     font-weight: lighter;
     font-family: "Dancing Script", cursive;
   }
+
   p {
     margin: 50px 50px 50px 70px;
     font-size: 1.2em;
@@ -244,6 +266,7 @@ img {
     color: #353936;
   }
 }
+
 /* -----------------------------ABOUT----------------------------*/
 /* -----------------------------EXPERIENCE----------------------------*/
 #experience {
@@ -257,12 +280,14 @@ img {
 
 .experience_container-word {
   padding-top: 190px;
+
   h1 {
     text-align: center;
     color: $header-main;
     font-size: 3em;
     font-family: "Dancing Script", cursive;
   }
+
   h2 {
     text-align: center;
     font-size: 1.6em;
@@ -270,6 +295,7 @@ img {
     text-transform: uppercase;
     color: #7c857e;
   }
+
   h3 {
     text-align: center;
     color: $header-main;
@@ -278,12 +304,14 @@ img {
     font-family: "Dancing Script", cursive;
   }
 }
+
 /* -----------------------------EXPERIENCE----------------------------*/
 /* -----------------------------MENU----------------------------*/
 .menu_container {
   margin-top: 50px;
   background-color: $nav;
 }
+
 .menu_container-word {
   padding-top: 60px;
 
@@ -293,6 +321,7 @@ img {
     font-size: 3em;
     font-family: "Dancing Script", cursive;
   }
+
   h2 {
     text-align: center;
     font-size: 1.6em;
@@ -300,6 +329,7 @@ img {
     text-transform: uppercase;
     color: #7c857e;
   }
+
   h3 {
     text-align: center;
     color: $header-main;
@@ -307,6 +337,7 @@ img {
     font-weight: lighter;
     font-family: "Dancing Script", cursive;
   }
+
   p {
     margin: 50px 50px 50px 70px;
     font-size: 1.2em;
@@ -320,6 +351,7 @@ img {
   background-color: $nav;
   position: relative;
   padding-bottom: 50px;
+
   h1 {
     position: absolute;
     top: 3%;
@@ -328,6 +360,7 @@ img {
     font-family: "Dancing Script", cursive;
     color: rgba(255, 101, 101, 0.1);
   }
+
   h2 {
     text-align: center;
     font-family: "Inria Serif", serif;
@@ -341,22 +374,27 @@ img {
     font-weight: lighter;
     font-family: "Dancing Script", cursive;
   }
+
   .btn_margin {
     margin-bottom: 50px;
   }
 }
+
 .bold {
   font-weight: bolder;
   font-size: 1.2em;
   color: #000 !important;
 }
+
 .first {
   margin-top: 120px !important;
 }
+
 .menu_container-sub--item {
   position: relative;
   display: flex;
   margin: 60px 40px;
+
   h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
@@ -365,17 +403,20 @@ img {
     font-weight: bolder;
     padding-bottom: 8px;
   }
+
   img {
     width: 100%;
     height: 100%;
     max-width: 90px;
     margin-right: 25px;
   }
+
   p {
     padding-bottom: 8px;
     color: #7c857e;
   }
 }
+
 /* -----------------------------MENU----------------------------*/
 /* -----------------------------RES----------------------------*/
 
@@ -387,6 +428,7 @@ img {
   -o-background-size: cover;
   background-size: cover;
   border-bottom: $header-main 10px solid;
+
   .about_container-word {
     background-color: rgba(1, 1, 1, 0.6);
     height: 79vh;
@@ -403,23 +445,28 @@ img {
 #contact {
   background-color: #282828;
   color: $nav;
+
   .contact_container {
     padding: 25px;
   }
+
   h2 {
-    font-family: "Inria Serif" bold;
+    font-family: "Inria Serif"bold;
     padding: 90px 0 30px 0;
     letter-spacing: 2px;
   }
+
   h3 {
     padding: 5px 0;
   }
+
   a {
     margin-top: 30px;
     color: #f5f5f5;
     font-size: 1.2em;
     letter-spacing: 2px;
   }
+
   .input {
     background: transparent;
     border: 1px solid $nav;
@@ -430,6 +477,7 @@ img {
     padding-left: 30px;
     color: $nav;
   }
+
   .submit {
     text-align: right;
     display: block;
@@ -439,4 +487,5 @@ img {
     margin-bottom: 100px;
   }
 }
+
 /* -----------------------------CONTACT----------------------------*/
