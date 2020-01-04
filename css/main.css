@@ -121,25 +121,25 @@ img {
           transform: rotate(0deg);
 }
 
-.active {
+.active .nav_btn .bar {
   background: 0;
 }
 
-.active::before {
+.active .nav_btn .bar::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.active::after {
+.active .nav_btn .bar::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-.active::before, .active::after {
+.active .nav_btn .bar::before, .active .nav_btn .bar::after {
   top: 0;
 }
 
-.active, .active::before, .active::after {
+.active .nav_btn .bar, .active .nav_btn .bar::before, .active .nav_btn .bar::after {
   -webkit-transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s -webkit-transform linear 0.2s;
   transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s -webkit-transform linear 0.2s;
   transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
@@ -151,8 +151,8 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
-  -webkit-transform: translateX(-4000px);
-          transform: translateX(-4000px);
+  -webkit-transform: translateX(-900px);
+          transform: translateX(-900px);
   -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
   transition: -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
   transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
@@ -173,14 +173,13 @@ img {
 
 .nav_overlay ul li {
   font-size: 2rem;
-  margin-bottom: 2em;
+  line-height: 3em;
   text-align: center;
 }
 
 .nav_overlay ul li:hover {
-  background: aqua;
-  cursor: -webkit-grab;
-  cursor: grab;
+  background: black;
+  cursor: pointer;
 }
 
 .nav_overlay ul li a {
