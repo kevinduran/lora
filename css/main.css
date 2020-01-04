@@ -79,34 +79,126 @@ img {
 }
 
 .nav_btn {
-  width: 40px;
+  -webkit-transition: 0.1s -webkit-transform linear;
+  transition: 0.1s -webkit-transform linear;
+  transition: 0.1s transform linear;
+  transition: 0.1s transform linear, 0.1s -webkit-transform linear;
+  position: relative;
+  background: 0;
+  float: left;
+  width: 3rem;
+  z-index: 1;
+  outline: 0;
+  padding: 0;
+  border: 0;
 }
 
-.nav_btn span {
-  height: 3px;
-  width: 31px;
-  margin-bottom: 9.5px;
-  background-color: #f5f5f5;
-  display: block;
-  position: relative;
-  top: 30%;
+.nav_btn .bar, .nav_btn .bar::before, .nav_btn .bar::after {
+  -webkit-transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s -webkit-transform linear;
+  transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s -webkit-transform linear;
+  transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
+  transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear, 0.2s -webkit-transform linear;
+  position: absolute;
+  background: #f5f5f5;
+  margin: auto;
+  width: 100%;
+  height: 0.2rem;
+  content: '';
+  top: 50%;
+  left: 0;
+}
+
+.nav_btn .bar::before {
+  top: -1.2rem;
+}
+
+.nav_btn .bar::after {
+  top: 1.2rem;
+}
+
+.nav_btn .bar::before, .nav_btn .bar::after {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.active {
+  background: 0;
+}
+
+.active::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.active::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.active::before, .active::after {
+  top: 0;
+}
+
+.active, .active::before, .active::after {
+  -webkit-transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s -webkit-transform linear 0.2s;
+  transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s -webkit-transform linear 0.2s;
+  transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
+  transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s, 0.2s -webkit-transform linear 0.2s;
+}
+
+.nav_overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+  transition: -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+  transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+  transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91), -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
+  padding-top: 10rem;
+}
+
+.menu-open .nav_overlay {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.nav_overlay ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.nav_overlay ul li {
+  font-size: 2rem;
+  border-bottom: 1px dotted red;
+}
+
+.nav_overlay ul li:hover {
+  background: aqua;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .nav_logo h1 {
   font-family: "Montserrat Subrayada", sans-serif;
   font-size: 2.9em;
   color: #f5f5f5;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.nav_logo a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .nav_shop i {
-  position: relative;
-  top: 25%;
+  margin-top: 10px;
   font-size: 1.8em;
   color: #f5f5f5;
-}
-
-.nav_overlay {
-  display: none;
 }
 
 /* -----------------------------HEADER----------------------------*/

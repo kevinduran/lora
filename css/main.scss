@@ -82,16 +82,98 @@ img {
 
 
 .nav_btn {
-  width: 40px;
+  transition: 0.1s transform linear;
+  position: relative;
+  background: 0;
+  float: left;
+  width: 3rem;
+  z-index: 1;
+  outline: 0;
+  padding: 0;
+  border: 0;
 
-  span {
-    height: 3px;
-    width: 31px;
-    margin-bottom: 9.5px;
-    background-color: $nav;
-    display: block;
-    position: relative;
-    top: 30%;
+  .bar {
+
+    &,
+    &::before,
+    &::after {
+      transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
+      position: absolute;
+      background: $nav;
+      margin: auto;
+      width: 100%;
+      height: 0.2rem;
+      content: '';
+      top: 50%;
+      left: 0;
+    }
+
+    &::before {
+      top: -1.2rem;
+    }
+
+    &::after {
+      top: 1.2rem;
+    }
+
+    &::before,
+    &::after {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.active {
+  background: 0;
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &::before,
+  &::after {
+    top: 0;
+  }
+
+  &,
+  &::before,
+  &::after {
+    transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
+  }
+}
+
+.nav_overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  transform: translateX(-1000px);
+  transition: transform 0.6s cubic-bezier(.56, .1, .34, .91);
+  padding-top: 10rem;
+
+  .menu-open & {
+    transform: translateX(0);
+  }
+
+  ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+
+    li {
+
+      font-size: 2rem;
+      border-bottom: 1px dotted red;
+
+      &:hover {
+        background: aqua;
+        cursor: grab;
+      }
+    }
   }
 }
 
@@ -100,21 +182,24 @@ img {
     font-family: "Montserrat Subrayada", sans-serif;
     font-size: 2.9em;
     color: $nav;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
   }
 }
 
 .nav_shop {
   i {
-    position: relative;
-    top: 25%;
+    margin-top: 10px;
     font-size: 1.8em;
     color: $nav;
   }
 }
 
-.nav_overlay {
-  display: none;
-}
 
 /* -----------------------------HEADER----------------------------*/
 #header {
