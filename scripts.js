@@ -1,6 +1,6 @@
 var isActive = false;
 
-$('.nav_btn').on('click', function () {
+$('.nav_button').on('click', function () {
     if (isActive) {
         $(this).removeClass('active');
         $('body').removeClass('menu-open');
