@@ -50,7 +50,9 @@
         <button class="shop_btn" type="button"><i class="fas fa-shopping-bag"></i></button>
       </div>
       <div class="nav_overlay-shop">
+
         <div class="shop_container-top">
+          <span class="ex"><button>X</button></span>
           <h1>Your cart is empty</h1>
           <button class="main_btn">go to menu</button>
         </div>
@@ -62,9 +64,10 @@
           <button class="main_btn">checkout</button>
 
 
- 
-          <button> empty cart</button>
-          <button>view cart</button>
+          <span class="cart-options">
+            <button> empty cart</button>
+            <button>view cart</button>
+          </span>
 
         </div>
       </div>
@@ -78,7 +81,7 @@
       <h1 class="header_logo">Lora</h1>
       <h1 class="header_logo-two">Fine Food & Wine</h1>
     </div>
-    <button class="main_btn">our hours</button></a>
+    <button class="main_btn" onclick="smoothScroll(document.getElementById('second'))">our hours</button></a>
   </header>
 
   <!--.....................HEADER............................-->
@@ -275,6 +278,7 @@
       <a href="#" class="submit">submit</a>
       <h3>All rights reserved &copy; 2019</h3>
     </div>
+    <div id="second"></div>
   </section>
 
   <!--.....................FOOTER............................-->
@@ -293,11 +297,7 @@ TODO LIST: [MOBILE]
     -GENERAL:
       -center div in the full image sections
       -add animations (one of last things)
-    -NAV
-      -shop should pull up realistic shop menu
-      -shop menu should  become an X for UX purposes.looks better
-    -HEADER:
-      -button should activate hours overlay 
+      -media queries
  -->
 
 <!-- 
