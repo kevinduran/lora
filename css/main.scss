@@ -14,7 +14,6 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
-
 }
 
 body,
@@ -77,6 +76,7 @@ img {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 10;
+  transition: all 1s ease;
 }
 
 .forward {
@@ -202,6 +202,8 @@ img {
     font-size: 2.9em;
     color: $nav;
     cursor: pointer;
+    transition: all 1s ease;
+
 
   }
 
@@ -212,6 +214,8 @@ img {
 }
 
 .nav_shop {
+  transition: all 1s ease;
+
 
   .shop_btn {
     color: $nav;
@@ -224,6 +228,7 @@ img {
     margin-top: 10px;
     font-size: 1.8em;
     color: $nav;
+    transition: all 1s ease;
   }
 
 }
@@ -252,6 +257,8 @@ img {
         top: -125%;
         right: 8%;
         font-size: 2.8em;
+        border: 0;
+        background: 0;
       }
     }
 
@@ -339,6 +346,7 @@ img {
   font-size: 6em;
   color: $header-main;
   text-align: center;
+  transition: all 1s ease;
 }
 
 .header_logo-two {
@@ -347,6 +355,7 @@ img {
   font-family: "Inria Serif", serif;
   text-transform: uppercase;
   text-align: center;
+  transition: all 1s ease;
 }
 
 .main_btn {
@@ -684,11 +693,11 @@ img {
 #contact {
   background-color: #282828;
   color: $nav;
- 
+
 
   .contact_container {
     padding: 0 25px 100px 25px;
-    
+
   }
 
   h2 {
@@ -730,3 +739,61 @@ img {
 }
 
 /* -----------------------------CONTACT----------------------------*/
+
+/* -----------------------------MEDIA QUERIES----------------------------*/
+
+@media only screen and (min-width: 800px) {
+  .nav_overlay {
+    transform: translateX(-1500px);
+  }
+
+  .nav_overlay-shop {
+    transform: translateX(1500px);
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+  #nav {
+    justify-content: space-between;
+    transition: all 1s ease;
+    padding: 0 75px;
+  }
+
+  .nav_logo {
+    h1 {
+      font-size: 4em;
+      transition: all 1s ease;
+    }
+  }
+
+  .shop_btn {
+    i {
+      font-size: 2em;
+      padding-top: 6px;
+      transition: all 1s ease;
+    }
+  }
+
+  .header_logo {
+    font-size: 7em;
+    transition: all 1s ease;
+  }
+
+  .header_logo-two {
+    font-size: 2em;
+    transition: all 1s ease;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav_overlay {
+    transform: translateX(-2500px);
+  }
+
+  .nav_overlay-shop {
+    transform: translateX(2500px);
+  }
+
+}

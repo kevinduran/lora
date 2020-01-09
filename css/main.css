@@ -76,6 +76,8 @@ img {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 10;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .forward {
@@ -202,11 +204,18 @@ img {
   font-size: 2.9em;
   color: #f5f5f5;
   cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .nav_logo a {
   text-decoration: none;
   cursor: pointer;
+}
+
+.nav_shop {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .nav_shop .shop_btn {
@@ -220,6 +229,8 @@ img {
   margin-top: 10px;
   font-size: 1.8em;
   color: #f5f5f5;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .nav_overlay-shop {
@@ -252,6 +263,8 @@ img {
   top: -125%;
   right: 8%;
   font-size: 2.8em;
+  border: 0;
+  background: 0;
 }
 
 .nav_overlay-shop .shop_container-top h1 {
@@ -340,6 +353,8 @@ img {
   font-size: 6em;
   color: rgba(237, 161, 73, 0.8);
   text-align: center;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .header_logo-two {
@@ -348,6 +363,8 @@ img {
   font-family: "Inria Serif", serif;
   text-transform: uppercase;
   text-align: center;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .main_btn {
@@ -748,4 +765,58 @@ img {
 }
 
 /* -----------------------------CONTACT----------------------------*/
+/* -----------------------------MEDIA QUERIES----------------------------*/
+@media only screen and (min-width: 800px) {
+  .nav_overlay {
+    -webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
+  }
+  .nav_overlay-shop {
+    -webkit-transform: translateX(1500px);
+            transform: translateX(1500px);
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    padding: 0 75px;
+  }
+  .nav_logo h1 {
+    font-size: 4em;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  .shop_btn i {
+    font-size: 2em;
+    padding-top: 6px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  .header_logo {
+    font-size: 7em;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  .header_logo-two {
+    font-size: 2em;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav_overlay {
+    -webkit-transform: translateX(-2500px);
+            transform: translateX(-2500px);
+  }
+  .nav_overlay-shop {
+    -webkit-transform: translateX(2500px);
+            transform: translateX(2500px);
+  }
+}
 /*# sourceMappingURL=main.css.map */
