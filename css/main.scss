@@ -474,10 +474,14 @@ img {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 
 .experience_container-word {
-  padding-top: 190px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
   h1 {
     text-align: center;
@@ -626,16 +630,53 @@ img {
   -o-background-size: cover;
   background-size: cover;
   border-bottom: $header-main 10px solid;
+  display: flex;
+  justify-content: center;
 
-  .about_container-word {
+  .res_overlay {
     background-color: rgba(1, 1, 1, 0.6);
     height: 79vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
-  button {
-    position: relative;
-    top: 5%;
+  .res_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      text-align: center;
+      color: $header-main;
+      font-size: 3em;
+      font-family: "Dancing Script", cursive;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.6em;
+      font-family: "Inria Serif", serif;
+      text-transform: uppercase;
+      color: #7c857e;
+    }
+
+    h3 {
+      text-align: center;
+      color: $header-main;
+      font-size: 3em;
+      font-weight: lighter;
+      font-family: "Dancing Script", cursive;
+    }
+
+    .res_btn {
+      top: 0;
+      margin: 25px 0;
+    }
   }
+
+
+
 }
 
 /* -----------------------------RES----------------------------*/
