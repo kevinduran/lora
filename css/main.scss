@@ -684,9 +684,11 @@ img {
 #contact {
   background-color: #282828;
   color: $nav;
+ 
 
   .contact_container {
-    padding: 25px;
+    padding: 0 25px 100px 25px;
+    
   }
 
   h2 {

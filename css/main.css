@@ -707,7 +707,7 @@ img {
 }
 
 #contact .contact_container {
-  padding: 25px;
+  padding: 0 25px 100px 25px;
 }
 
 #contact h2 {
