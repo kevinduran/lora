@@ -328,22 +328,20 @@ img {
   -o-background-size: cover;
   background-size: cover;
   height: 110vh;
+  position: relative;
 }
 
 .header_container {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
   position: relative;
-  top: 38%;
-  background-color: rgba(1, 1, 1, 0.4);
+  top: 60%;
+  left: 40%;
+  border: 1px solid red;
+  width: 220px
 }
 
 .header_logo {
   font-family: "Montserrat Subrayada", sans-serif;
-  font-size: 6em;
+  font-size: 4em;
   color: $header-main;
   text-align: center;
   transition: all 1s ease;
@@ -351,7 +349,7 @@ img {
 
 .header_logo-two {
   color: $nav;
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-family: "Inria Serif", serif;
   text-transform: uppercase;
   text-align: center;
