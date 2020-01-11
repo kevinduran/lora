@@ -404,18 +404,18 @@ img {
 /* -----------------------------ABOUT----------------------------*/
 #about {
   background-color: $nav;
-  height: 170vh;
+  height: 100%;
 }
 
 .about_container-img {
   text-align: center;
   position: relative;
-  max-width: 1000px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
 .about_img {
-  width: 270px;
+  width: 200px;
 }
 
 .about_img-one {
@@ -490,6 +490,8 @@ img {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  transition: 1s all ease;
+
 
   h1 {
     text-align: center;
@@ -563,9 +565,8 @@ img {
   padding-bottom: 50px;
 
   h1 {
-    position: absolute;
-    top: 3%;
-    right: 5%;
+    position: relative;
+    text-align: center;
     font-size: 7em;
     font-family: "Dancing Script", cursive;
     color: rgba(255, 101, 101, 0.1);
@@ -804,8 +805,13 @@ img {
     transition: all 1s ease;
   }
 
-  .header_logo-two {
+  #about {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+  }
 
+  .header_logo-two {
     transition: all 1s ease;
   }
 
@@ -819,6 +825,16 @@ img {
 
   .about_container-img {
     flex: 2;
+    max-width: 1000px;
+  }
+
+  .about_img {
+    width: 270px;
+  }
+
+  .experience_container-word {
+    font-size: 1.6em;
+    transition: 1s ease all;
   }
 
 }
