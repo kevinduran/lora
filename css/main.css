@@ -412,11 +412,12 @@ img {
 .about_container-img {
   text-align: center;
   position: relative;
-  max-width: 600px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .about_img {
-  width: 200px;
+  width: 270px;
 }
 
 .about_img-one {
@@ -806,6 +807,7 @@ img {
     left: 68%;
     top: 50%;
     width: 300px;
+    height: 315px;
   }
   .header_logo {
     font-size: 9em;
@@ -815,6 +817,21 @@ img {
   .header_logo-two {
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
+  }
+  .about_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about_container-word {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .about_container-img {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
   }
 }
 

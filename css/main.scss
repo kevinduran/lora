@@ -410,11 +410,12 @@ img {
 .about_container-img {
   text-align: center;
   position: relative;
-  max-width: 600px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .about_img {
-  width: 200px;
+  width: 270px;
 }
 
 .about_img-one {
@@ -795,6 +796,7 @@ img {
     left: 68%;
     top: 50%;
     width: 300px;
+    height: 315px;
   }
 
   .header_logo {
@@ -805,6 +807,18 @@ img {
   .header_logo-two {
 
     transition: all 1s ease;
+  }
+
+  .about_container {
+    display: flex;
+  }
+
+  .about_container-word {
+    flex: 2;
+  }
+
+  .about_container-img {
+    flex: 2;
   }
 
 }
