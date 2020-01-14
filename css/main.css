@@ -329,6 +329,21 @@ img {
   position: relative;
 }
 
+#hours_header {
+  background: url(img/hours_header.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 110vh;
+  position: relative;
+}
+
+.hours_overlay {
+  background-color: rgba(1, 1, 1, 0.6);
+  height: 99vh;
+  width: 100%;
+  z-index: 1000;
+  position: relative top;
+}
+
 .header_container {
   position: relative;
   top: 60%;
@@ -401,6 +416,10 @@ img {
 .main_btn:active:after {
   width: 200px;
   height: 200px;
+}
+
+.hours_btn {
+  text-decoration: none;
 }
 
 /* -----------------------------ABOUT----------------------------*/
