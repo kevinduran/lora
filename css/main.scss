@@ -65,6 +65,13 @@ img {
   font-weight: bolder;
 }
 
+
+
+
+
+
+
+
 /* -----------------------------NAVIGATION----------------------------*/
 #nav {
   justify-content: space-around;
@@ -306,8 +313,6 @@ img {
     }
   }
 
-
-
   p {
     color: white;
   }
@@ -318,6 +323,12 @@ img {
 
 
 }
+
+/* -----------------------------NAVIGATION----------------------------*/
+
+
+
+
 
 
 /* -----------------------------HEADER----------------------------*/
@@ -331,23 +342,7 @@ img {
   position: relative;
 }
 
-#hours_header {
-  background: url(img/hours_header.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 110vh;
-  position: relative;
-}
 
-.hours_overlay {
-  background-color: rgba(1, 1, 1, 0.6);
-  height: 99vh;
-  width: 100%;
-  z-index: 1000;
-  position: relative top:0;
-}
 
 .header_container {
   position: relative;
@@ -356,6 +351,8 @@ img {
   width: 220px;
   transition: 1s all ease;
 }
+
+
 
 .header_logo {
   font-family: "Dancing Script", cursive;
@@ -720,6 +717,61 @@ img {
 }
 
 /* -----------------------------RES----------------------------*/
+/* -----------------------------HOURS----------------------------*/
+#hours {
+  background: url(img/hours_header.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  border-bottom: 10px solid $header-main;
+}
+
+.hours_overlay {
+  background-color: rgba(1, 1, 1, 0.8);
+  height: 99vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: 1s ease all;
+
+}
+
+.hours_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s all ease;
+
+  h1 {
+    text-align: center;
+    color: $header-main;
+    font-size: 3em;
+    font-family: "Dancing Script", cursive;
+  }
+
+  h2 {
+
+    font-size: 1.6em;
+    font-family: "Inria Serif", serif;
+    text-transform: uppercase;
+    color: $nav;
+    margin: 8px 0;
+  }
+
+  h3 {
+    text-align: center;
+    color: $header-main;
+    font-size: 3em;
+    font-weight: lighter;
+    font-family: "Dancing Script", cursive;
+  }
+}
+
+/* -----------------------------HOURS----------------------------*/
 /* -----------------------------CONTACT----------------------------*/
 #contact {
   background-color: #282828;
@@ -904,6 +956,11 @@ img {
         transition: 1s ease all;
       }
     }
+
+  }
+
+  .hours_container {
+    font-size: 1.3em;
   }
 
   .large_contact-container {
