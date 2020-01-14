@@ -539,9 +539,15 @@ img {
 
 /* -----------------------------EXPERIENCE----------------------------*/
 /* -----------------------------MENU----------------------------*/
+#menu{
+  border-bottom: 10px solid $header-main;
+}
+
 .menu_container {
-  margin-top: 50px;
+
   background-color: $nav;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
@@ -581,10 +587,14 @@ img {
   }
 }
 
+
 .menu_container-sub {
   background-color: $nav;
   position: relative;
-  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+
 
   h1 {
     position: relative;
