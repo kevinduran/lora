@@ -168,6 +168,8 @@ img {
 .menu-open .nav_overlay {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  position: fixed;
+  left: 0%;
 }
 
 .nav_overlay ul {
@@ -660,6 +662,10 @@ img {
   color: #7c857e;
 }
 
+.menu_padding {
+  padding-top: 19vh;
+}
+
 /* -----------------------------MENU----------------------------*/
 /* -----------------------------RES----------------------------*/
 #res {
@@ -834,6 +840,7 @@ img {
   margin: 0 auto;
   -webkit-transition: 1s ease all;
   transition: 1s ease all;
+  padding: 0 30px;
 }
 
 #contact .input {
@@ -854,6 +861,10 @@ img {
   text-transform: uppercase;
   font-size: 1em;
   margin-bottom: 100px;
+}
+
+.last {
+  padding-bottom: 30px !important;
 }
 
 /* -----------------------------CONTACT----------------------------*/
