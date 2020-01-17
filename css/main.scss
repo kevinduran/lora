@@ -539,7 +539,7 @@ img {
 
 /* -----------------------------EXPERIENCE----------------------------*/
 /* -----------------------------MENU----------------------------*/
-#menu{
+#menu {
   border-bottom: 10px solid $header-main;
 }
 
@@ -941,6 +941,12 @@ img {
 
   #menu {
     display: flex;
+  }
+
+  #menu_two {
+    h1 {
+      padding-top: 300px;
+    }
   }
 
   .menu_container-top {
