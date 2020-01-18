@@ -547,7 +547,7 @@ img {
 }
 
 .menu_container {
-
+  border-bottom: 10px solid $header-main;
   background-color: $nav;
   display: flex;
   flex-wrap: wrap;
@@ -666,6 +666,7 @@ img {
 .menu_padding {
   padding-top: 19vh;
 }
+
 
 /* -----------------------------MENU----------------------------*/
 /* -----------------------------RES----------------------------*/
