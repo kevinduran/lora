@@ -1,6 +1,6 @@
 var isActive = false;
 
-$(".nav_button").on("click", function() {
+$(".nav_button").on("click", function () {
   if (isActive) {
     $(this).removeClass("active forward");
     $("body").removeClass("menu-open");
@@ -12,7 +12,7 @@ $(".nav_button").on("click", function() {
   isActive = !isActive;
 });
 
-$(".nav_shop, .ex").on("click", function() {
+$(".nav_shop, .ex").on("click", function () {
   if (isActive) {
     $(this).removeClass("active");
     $("body").removeClass("shop-open");

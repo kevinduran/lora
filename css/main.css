@@ -672,7 +672,7 @@ img {
 /* -----------------------------RES----------------------------*/
 #res {
   height: 100vh;
-  background: url(img/res.jpg) no-repeat center center fixed;
+  background: url(img/res-small.jpg) no-repeat center center fixed;
   background-size: cover;
   border-bottom: rgba(237, 161, 73, 0.8) 10px solid;
   display: -webkit-box;
@@ -745,7 +745,7 @@ img {
 /* -----------------------------RES----------------------------*/
 /* -----------------------------HOURS----------------------------*/
 #hours {
-  background: url(img/hours_header.jpg) no-repeat center center fixed;
+  background: url(img/hours_header-small.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   position: relative;
