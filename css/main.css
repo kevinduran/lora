@@ -189,7 +189,7 @@ body {
 }
 
 .nav_overlay ul li:hover {
-  background: black;
+  border: 1px solid white;
   cursor: pointer;
 }
 
@@ -199,6 +199,7 @@ body {
   font-family: "Inria Serif", serif;
   text-transform: uppercase;
   letter-spacing: 12px;
+  padding: 35px 100px;
 }
 
 .nav_logo {
