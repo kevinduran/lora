@@ -955,3 +955,9 @@ body {
     transform: translateX(2500px);
   }
 }
+
+@media only screen and (max-height: 700px) {
+  .nav_overlay {
+    padding-top: 7em;
+  }
+}
