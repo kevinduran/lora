@@ -332,7 +332,7 @@ body {
 /* -----------------------------NAVIGATION----------------------------*/
 /* -----------------------------HEADER----------------------------*/
 #header {
-  background: url(img/header-background.jpg) no-repeat fixed;
+  background: url(img/header-background.jpg);
   background-size: cover;
   height: 110vh;
   position: relative;
