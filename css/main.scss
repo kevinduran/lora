@@ -314,7 +314,7 @@ body {
 
 /* -----------------------------HEADER----------------------------*/
 #header {
-  background: url(img/header-background.jpg) no-repeat center center fixed;
+  background: url(img/header-background.jpg) no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -958,6 +958,6 @@ body {
 
 @media only screen and (max-height: 700px) {
   .nav_overlay {
-    padding-top: 7em;
+    padding-top: 6.5em;
   }
 }

@@ -332,7 +332,7 @@ body {
 /* -----------------------------NAVIGATION----------------------------*/
 /* -----------------------------HEADER----------------------------*/
 #header {
-  background: url(img/header-background.jpg) no-repeat center center fixed;
+  background: url(img/header-background.jpg) no-repeat fixed;
   background-size: cover;
   height: 110vh;
   position: relative;
@@ -1029,7 +1029,7 @@ body {
 
 @media only screen and (max-height: 700px) {
   .nav_overlay {
-    padding-top: 7em;
+    padding-top: 6.5em;
   }
 }
 /*# sourceMappingURL=main.css.map */
