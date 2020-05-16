@@ -886,6 +886,8 @@ body {
   }
   .nav_logo h1 {
     font-size: 2em;
+    position: relative;
+    top: -10%;
   }
   .nav_shop .shop_btn {
     font-size: 0.9em;
