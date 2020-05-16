@@ -881,6 +881,18 @@ body {
     background: url(img/header-background.jpg) no-repeat center;
     height: 100vh;
   }
+  #experience {
+    height: 100vh;
+    background: url(img/experience.jpg) no-repeat center;
+  }
+  #hours {
+    background: url(img/hours_header-small.jpg) no-repeat center;
+    height: 100vh;
+  }
+  #res {
+    height: 100vh;
+    background: url(img/res-small.jpg) no-repeat center;
+  }
   .header_container {
     left: 35%;
     top: 58%;
