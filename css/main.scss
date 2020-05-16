@@ -819,6 +819,15 @@ body {
   .header_container {
     left: 40%;
   }
+  .nav_logo h1{
+    font-size: 2em;
+  }
+  .nav_shop .shop_btn{
+    font-size: 0.9em;
+    top:-10%;
+    position: relative;
+  }
+  
 }
 
 @media only screen and (min-width: 550px) {
