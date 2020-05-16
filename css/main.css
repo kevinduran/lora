@@ -878,7 +878,7 @@ body {
 /* -----------------------------MEDIA QUERIES----------------------------*/
 @media only screen and (min-width: 400px) {
   #header {
-    background: left 5%/url(img/header-background.jpg);
+    background: no-repeat center/80% url(img/header-background.jpg);
     background-size: cover;
     height: 110vh;
     position: relative;
