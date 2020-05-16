@@ -812,14 +812,9 @@ body {
 
 /* -----------------------------MEDIA QUERIES----------------------------*/
 @media only screen and (min-width: 400px) {
-  #header {
-    background: no-repeat center/80% url(img/header-background.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 110vh;
-    position: relative;
+  #header{
+    background: url(img/header-background.jpg);
+    height: 100vh;
   }
   .header_container {
     left: 40%;
