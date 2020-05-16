@@ -314,8 +314,7 @@ body {
 
 /* -----------------------------HEADER----------------------------*/
 #header {
-  background: url(img/header-background.jpg);
-  // background: url(img/header-background.jpg) no-repeat center center fixed;
+  background: url(img/header-background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -813,6 +812,15 @@ body {
 
 /* -----------------------------MEDIA QUERIES----------------------------*/
 @media only screen and (min-width: 400px) {
+  #header {
+    background: url(img/header-background.jpg) 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 110vh;
+    position: relative;
+  }
   .header_container {
     left: 40%;
   }
