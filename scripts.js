@@ -23,3 +23,11 @@ $(".nav_shop, .ex").on("click", function () {
 
   isActive = !isActive;
 });
+
+
+//shopping cart tests
+
+let yellow_btn_shop = document.querySelector('.yellow_btn');
+yellow_btn_shop.addEventListener("click", function () {
+  alert('yolo');
+});
