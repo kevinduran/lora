@@ -27,7 +27,9 @@ $(".nav_shop, .ex").on("click", function () {
 
 //shopping cart tests
 
-let yellow_btn_shop = document.querySelector('.yellow_btn');
-yellow_btn_shop.addEventListener("click", function () {
-  alert('yolo');
-});
+var yellow_btn_shop = document.getElementsByClassName('yellow_btn');
+for (var i = 0; i < yellow_btn_shop.length; i++) {
+  yellow_btn_shop[i].addEventListener("click", function () {
+    alert('yolo');
+  });
+}
