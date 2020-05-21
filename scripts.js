@@ -25,11 +25,13 @@ $(".nav_shop, .ex").on("click", function () {
 });
 
 
-//shopping cart tests
+//shopping cart test
 
 var yellow_btn_shop = document.getElementsByClassName('yellow_btn');
 for (var i = 0; i < yellow_btn_shop.length; i++) {
   yellow_btn_shop[i].addEventListener("click", function () {
-    alert('yolo');
+    var test = this.parentNode.innerText;
+    console.log(test);
+
   });
 }
