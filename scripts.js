@@ -33,6 +33,12 @@ var yellow_btn_shop = document.getElementsByClassName('yellow_btn');
 for (var i = 0; i < yellow_btn_shop.length; i++) {
   yellow_btn_shop[i].addEventListener("click", function () {
     var test = this.parentNode.innerText;
-    console.log(test);
+    alert(test);
+    var testicle =document.querySelector('.open_menu-items');
+    testicle.appendChild(test);
   });
 }
+
+
+
+
