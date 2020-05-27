@@ -861,7 +861,8 @@ body {
   }
   .ex button {
     position: absolute;
-    right: 100%;
+    top:-10%;
+    right: 100%; //remember to fix this
   }
 }
 

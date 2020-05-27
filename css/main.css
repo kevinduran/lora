@@ -927,6 +927,7 @@ body {
   }
   .ex button {
     position: absolute;
+    top: -10%;
     right: 100%;
   }
 }
