@@ -33,12 +33,17 @@ var yellow_btn_shop = document.getElementsByClassName('yellow_btn');
 for (var i = 0; i < yellow_btn_shop.length; i++) {
   yellow_btn_shop[i].addEventListener("click", function () {
     var test = this.parentNode.innerText;
-    alert(test);
-    var testicle =document.querySelector('.open_menu-items');
-    testicle.appendChild(test);
+    var testCase = document.createElement('li');
+    testCase.innerText = test;
+    alert(testCase.innerHTML);
+    var output = document.querySelector('.shop_container-top');
+    output.appendChild(testCase);
   });
 }
 
 
 
 
+//need to possibly click the button
+//that then collects the data from the  item being clicked on
+//somehow transfre that data to a (created?) element that we then append to the menu list?

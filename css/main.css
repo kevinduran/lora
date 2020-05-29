@@ -275,6 +275,10 @@ body {
   background: 0;
 }
 
+.nav_overlay-shop .shop_container-top .ex li {
+  color: white;
+}
+
 .nav_overlay-shop .shop_container-top h1 {
   color: white;
   text-align: center;
