@@ -267,6 +267,7 @@ body {
 
 .nav_overlay-shop .shop_container-top .open_menu-items {
   color: white;
+  display: block;
 }
 
 .nav_overlay-shop .shop_container-top .ex button {

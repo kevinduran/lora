@@ -37,7 +37,7 @@ window.addEventListener('load', (event) => {
     yellow_btn_shop[i].addEventListener("click", function() {
       //collect the text of the selected element
       var shop_data = this.parentNode.innerText;
-      //create a new element to hold the text
+      //create a new element to hold the text , add css class to it
       var shop_data_container = document.createElement('li');
       //place text inside newly created element
       shop_data_container.innerHTML = shop_data;
@@ -45,15 +45,12 @@ window.addEventListener('load', (event) => {
       //set the location of our selected items
       var shop_list = document.querySelector('.open_menu-items');
       //set selected items in appropriate location
-      shop_list.innerHTML += shop_data_container.innerHTML;
-    });
+      shop_list.innerHTML += shop_data_container.innerHTML + "<br>"
   }
 });
 
 
 
-
-//replicate the problem. small button .clicked . red box appears.
 
 
 //need to possibly click the button
