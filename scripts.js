@@ -73,5 +73,7 @@ var emptyButton = document.querySelector('.emptyButton');
 emptyButton.addEventListener('click', function () {
   var shop_list = document.querySelector('.open_menu-items');
   shop_list.innerHTML = '';
+  var yellowCircle = document.querySelector('.circle');
+  yellowCircle.innerText = 0;
 
 });
