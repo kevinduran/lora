@@ -36,8 +36,9 @@ window.addEventListener('load', (event) => {
   for (var i = 0; i < yellow_btn_shop.length; i++) {
     yellow_btn_shop[i].addEventListener("click", function () {
       var yellowCircle = document.querySelector('.circle');
-      yellowCircle.style.visibility='visible';
+      yellowCircle.style.visibility = 'visible';
       yellowCircle.innerHTML++;
+
       //collect the text of the selected element
       var shop_data = this.parentNode.innerText;
       //create a new element to hold the text , add css class to it
@@ -56,6 +57,7 @@ window.addEventListener('load', (event) => {
       setTimeout(added, 777);
       //set the location of our selected items
       var shop_list = document.querySelector('.open_menu-items');
+      shop_list.innerText = '';
       //set selected items in appropriate location
       shop_list.innerHTML += shop_data_container.innerHTML + "<br>" + "<br>";
     });
@@ -64,8 +66,8 @@ window.addEventListener('load', (event) => {
 });
 
 var emptyButton = document.querySelector('.emptyButton');
-emptyButton.addEventListener('click',function(){
+emptyButton.addEventListener('click', function () {
   var shop_list = document.querySelector('.open_menu-items');
   shop_list.innerHTML = '';
-  
+
 });
