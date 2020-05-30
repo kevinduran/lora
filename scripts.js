@@ -26,22 +26,34 @@ $(".nav_shop, .ex").on("click", function () {
 });
 
 
-//shopping cart for menu
+//SHOPPING CART
 
-var yellow_btn_shop = document.getElementsByClassName('yellow_btn');
+//variable declarations
+window.addEventListener('load', (event) => {
+  var yellow_btn_shop = document.getElementsByClassName('yellow_btn');
 
-for (var i = 0; i < yellow_btn_shop.length; i++) {
-  yellow_btn_shop[i].addEventListener("click", function () {
-    var test = this.parentNode.innerText;
-    var testCase = document.createElement('li');
-    testCase.innerText = test;
-    alert(testCase.innerHTML);
-    var output = document.querySelector('.shop_container-top');
-    output.appendChild(testCase);
-  });
-}
+  //loop through buttons to collect the data of the clicked item
+  for (var i = 0; i < yellow_btn_shop.length; i++) {
+    yellow_btn_shop[i].addEventListener("click", function() {
+      //collect the text of the selected element
+      var shop_data = this.parentNode.innerText;
+      //create a new element to hold the text
+      var shop_data_container = document.createElement('li');
+      //place text inside newly created element
+      shop_data_container.innerHTML = shop_data;
+      alert(shop_data_container.innerHTML);
+      //set the location of our selected items
+      var shop_list = document.querySelector('.open_menu-items');
+      //set selected items in appropriate location
+      shop_list.innerHTML += shop_data_container.innerHTML;
+    });
+  }
+});
 
 
+
+
+//replicate the problem. small button .clicked . red box appears.
 
 
 //need to possibly click the button

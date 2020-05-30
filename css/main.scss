@@ -246,7 +246,9 @@ body {
   .shop_container-top {
     margin-bottom: 10em;
     position: relative;
-
+    .open_menu-items{
+      color: white;
+    }
     .ex {
       button {
         color: $nav;
@@ -257,9 +259,7 @@ body {
         border: 0;
         background: 0;
       }
-      li{
-        color: white;
-      }
+    
     }
 
     h1 {
