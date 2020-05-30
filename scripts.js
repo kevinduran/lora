@@ -35,6 +35,11 @@ window.addEventListener('load', (event) => {
   //loop through buttons to collect the data of the clicked item
   for (var i = 0; i < yellow_btn_shop.length; i++) {
     yellow_btn_shop[i].addEventListener("click", function () {
+      //set the location of our selected items
+      var shop_list = document.querySelector('.open_menu-items');
+      if(shop_list.innerText == 'YOUR CART IS EMPTY'){
+        shop_list.innerText = '';
+      }
       var yellowCircle = document.querySelector('.circle');
       yellowCircle.style.visibility = 'visible';
       yellowCircle.innerHTML++;
@@ -55,9 +60,8 @@ window.addEventListener('load', (event) => {
         item_add.remove();
       }
       setTimeout(added, 777);
-      //set the location of our selected items
-      var shop_list = document.querySelector('.open_menu-items');
-      shop_list.innerText = '';
+      
+      
       //set selected items in appropriate location
       shop_list.innerHTML += shop_data_container.innerHTML + "<br>" + "<br>";
     });
