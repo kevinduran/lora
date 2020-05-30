@@ -35,6 +35,9 @@ window.addEventListener('load', (event) => {
   //loop through buttons to collect the data of the clicked item
   for (var i = 0; i < yellow_btn_shop.length; i++) {
     yellow_btn_shop[i].addEventListener("click", function () {
+      var yellowCircle = document.querySelector('.circle');
+      yellowCircle.style.visibility='visible';
+      yellowCircle.innerHTML++;
       //collect the text of the selected element
       var shop_data = this.parentNode.innerText;
       //create a new element to hold the text , add css class to it

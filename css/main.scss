@@ -219,6 +219,18 @@ body {
     font-size: 1.2em;
     background: none;
     border: none;
+    .circle {
+      visibility:hidden;
+      position: relative;
+      left: -75%;
+      bottom: -10px;
+      height: 18px;
+      width: 18px;
+      font-size: 0.8em;
+      background-color: $header-main;
+      border-radius: 50%;
+      display: inline-block;
+    }
   }
 
   i {
@@ -246,12 +258,12 @@ body {
   .shop_container-top {
     margin-bottom: 1em;
     position: relative;
-    .open_menu-items{
+    .open_menu-items {
       color: white;
       display: block;
       text-align: center;
-      font-size:1.3em;
-      button{
+      font-size: 1.3em;
+      button {
         display: inline;
       }
     }
@@ -265,7 +277,6 @@ body {
         border: 0;
         background: 0;
       }
-    
     }
 
     h1 {
@@ -293,7 +304,7 @@ body {
         font-size: 1.3em;
       }
     }
-    button{
+    button {
       cursor: pointer;
     }
 
@@ -652,8 +663,8 @@ body {
     padding: 0;
     background-color: #f5f5f5;
   }
-  .item_added{
-    color:rgba(237, 161, 73, 0.8);
+  .item_added {
+    color: rgba(237, 161, 73, 0.8);
     display: inline;
     padding: 30px;
     font-size: 1.4em;
@@ -881,7 +892,7 @@ body {
   }
   .ex button {
     position: absolute;
-    top:-10%;
+    top: -10%;
     right: 100%; //remember to fix this
   }
 }

@@ -232,6 +232,19 @@ body {
   border: none;
 }
 
+.nav_shop .shop_btn .circle {
+  visibility: hidden;
+  position: relative;
+  left: -75%;
+  bottom: -10px;
+  height: 18px;
+  width: 18px;
+  font-size: 0.8em;
+  background-color: rgba(237, 161, 73, 0.8);
+  border-radius: 50%;
+  display: inline-block;
+}
+
 .nav_shop i {
   margin-top: 10px;
   font-size: 1.8em;
