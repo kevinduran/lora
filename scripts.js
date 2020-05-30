@@ -43,18 +43,26 @@ window.addEventListener('load', (event) => {
       shop_data_container.innerHTML = shop_data;
       //instead of alert.insert into HTML
       var item_add = document.createElement('p');
+      item_add.classList.add('item_added')
       item_add.innerText = 'item added!';
       var added_container = this.nextSibling;
       added_container.appendChild(item_add);
       var added = function () {
         item_add.remove();
       }
-      setTimeout(added, 1500);
+      setTimeout(added, 777);
       //set the location of our selected items
       var shop_list = document.querySelector('.open_menu-items');
       //set selected items in appropriate location
-      shop_list.innerHTML += shop_data_container.innerHTML + "<br>"
+      shop_list.innerHTML += shop_data_container.innerHTML + "<br>" + "<br>";
     });
 
   };
+});
+
+var emptyButton = document.querySelector('.emptyButton');
+emptyButton.addEventListener('click',function(){
+  var shop_list = document.querySelector('.open_menu-items');
+  shop_list.innerHTML = '';
+  
 });

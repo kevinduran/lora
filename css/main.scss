@@ -249,13 +249,18 @@ body {
     .open_menu-items{
       color: white;
       display: block;
+      text-align: center;
+      font-size:1.3em;
+      button{
+        display: inline;
+      }
     }
     .ex {
       button {
         color: $nav;
         position: absolute;
-        top: -100%;
-        right: 8%;
+        top: -135px;
+        right: 9%;
         font-size: 2.8em;
         border: 0;
         background: 0;
@@ -288,6 +293,9 @@ body {
         font-size: 1.3em;
       }
     }
+    button{
+      cursor: pointer;
+    }
 
     .cart-options {
       display: flex;
@@ -301,6 +309,7 @@ body {
         border-bottom: 3px solid $header-main;
         padding-bottom: 10px;
         letter-spacing: 3px;
+        cursor: pointer;
       }
     }
   }
@@ -632,6 +641,7 @@ body {
   p {
     padding-bottom: 8px;
     color: #7c857e;
+    font-size: 1.1em;
   }
   button {
     color: rgba(237, 161, 73, 0.8);
@@ -641,6 +651,12 @@ body {
     position: relative;
     padding: 0;
     background-color: #f5f5f5;
+  }
+  .item_added{
+    color:rgba(237, 161, 73, 0.8);
+    display: inline;
+    padding: 30px;
+    font-size: 1.4em;
   }
 }
 
