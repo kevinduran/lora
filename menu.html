@@ -31,6 +31,7 @@
 
 <body>
     <!--....................NAVIGATION BAR....................-->
+
     <nav id="nav" class="sticky" role="navigation">
         <button class="nav_btn nav_button" type="button">
             <span class="bar"></span>
@@ -48,14 +49,17 @@
             </a>
         </div>
         <div class="nav_shop">
-            <button class="shop_btn" type="button"><i class="fas fa-shopping-bag"></i></button>
+            <button class="shop_btn" type="button"><i class="fas fa-shopping-bag"></i><span
+                    class="circle">0</span></button>
+
         </div>
         <div class="nav_overlay-shop">
 
             <div class="shop_container-top">
                 <span class="ex"><button>X</button></span>
-                <h1>Your cart is empty</h1>
-                <a href="menu.html" class="hours_btn"><button class="main_btn btn_margin">go to menu</button></a>
+                <span class="open_menu-items">
+                    <h1>your cart is empty</h1>
+                </span>
             </div>
             <div class="shop_container-bottom">
                 <span class='price'>
@@ -63,14 +67,18 @@
                     <p>$0.00</p>
                 </span>
                 <button class="main_btn">checkout</button>
+
+
                 <span class="cart-options">
-                    <button> empty cart</button>
-                    <button>view cart</button>
+                    <button class="emptyButton"> empty cart</button>
+                    <a href="menu.html"><button>go to menu</button></a>
                 </span>
 
             </div>
         </div>
     </nav>
+
+    <!--.....................NAVIGATION BAR......................-->
 
     <!--......................MENU...........................-->
 
@@ -90,7 +98,7 @@
                                 Garlic puree, Mozzarella blend, caviar, pickled cucumbers.
                             </p>
                             <p class="bold">$24</p><button class="yellow_btn" type="button"><i
-                                    class="fas fa-shopping-bag"></i></button>
+                                    class="fas fa-shopping-bag"></i></button><span></span>
                         </span>
                     </div>
                     <div class="menu_container-sub--item">
@@ -101,7 +109,7 @@
                                 Kale, Champagne dressing, almond, broccoli with a lamb's SAUCE.
                             </p>
                             <p class="bold">$20</p><button class="yellow_btn" type="button"><i
-                                    class="fas fa-shopping-bag"></i></button>
+                                    class="fas fa-shopping-bag"></i></button><span></span>
                         </span>
                     </div>
                     <div class="menu_container-sub--item">
@@ -112,7 +120,7 @@
                                 Kobe beef, tomato puree with port wine and lemon zest and lots of jest.
                             </p>
                             <p class="bold">$25</p><button class="yellow_btn" type="button"><i
-                                    class="fas fa-shopping-bag"></i></button>
+                                    class="fas fa-shopping-bag"></i></button><span></span>
                         </span>
                     </div>
                     <div class="menu_container-sub--item">
@@ -123,7 +131,7 @@
                                 Roasted prawn dipped in a pumpkin puree, pickled mushrooms, more random ingredients.
                             </p>
                             <p class="bold">$20</p><button class="yellow_btn" type="button"><i
-                                    class="fas fa-shopping-bag"></i></button>
+                                    class="fas fa-shopping-bag"></i></button><span></span>
                         </span>
                     </div>
                 </div>
@@ -139,7 +147,7 @@
                         <p>
                             Pizza.Veggies.Boom </p>
                         <p class="bold">$27</p><button class="yellow_btn" type="button"><i
-                                class="fas fa-shopping-bag"></i></button>
+                                class="fas fa-shopping-bag"></i></button><span></span>
                     </span>
                 </div>
                 <div class="menu_container-sub--item">
@@ -150,7 +158,7 @@
                             Pasta.Veggies.Boom
                         </p>
                         <p class="bold">$27</p><button class="yellow_btn" type="button"><i
-                                class="fas fa-shopping-bag"></i></button>
+                                class="fas fa-shopping-bag"></i></button><span></span>
                     </span>
                 </div>
                 <div class="menu_container-sub--item">
@@ -161,7 +169,7 @@
                             To be served on a soft brioche bread and topped with American cheese.
                         </p>
                         <p class="bold">$20</p><button class="yellow_btn" type="button"><i
-                                class="fas fa-shopping-bag"></i></button>
+                                class="fas fa-shopping-bag"></i></button><span></span>
                     </span>
                 </div>
                 <div class="menu_container-sub--item">
@@ -172,7 +180,7 @@
                             Let's face it, we just want a pepperoni pizza.
                         </p>
                         <p class="bold">$68</p><button class="yellow_btn" type="button"><i
-                                class="fas fa-shopping-bag"></i></button>
+                                class="fas fa-shopping-bag"></i></button><span></span>
                     </span>
                 </div>
 
@@ -190,7 +198,7 @@
                             puree.
                         </p>
                         <p class="bold">$1</p><button class="yellow_btn" type="button"><i
-                                class="fas fa-shopping-bag"></i></button>
+                                class="fas fa-shopping-bag"></i></button><span></span>
                     </span>
                 </div>
                 <div class="menu_container-sub--item">
@@ -201,7 +209,7 @@
                             Let's get gramp's mouth watering. Steel Cut Oats, whipped cream, California Peaches.
                         </p>
                         <p class="bold">$3,000</p><button class="yellow_btn" type="button"><i
-                                class="fas fa-shopping-bag"></i></button>
+                                class="fas fa-shopping-bag"></i></button><span></span>
                     </span>
                 </div>
                 <div class="menu_container-sub--item">
@@ -212,7 +220,7 @@
                             Yeah. You heard that right. Chocolate Pancakes. You're Welcome.
                         </p>
                         <p class="bold">$20</p><button class="yellow_btn" type="button"><i
-                                class="fas fa-shopping-bag"></i></button>
+                                class="fas fa-shopping-bag"></i></button><span></span>
                     </span>
                 </div>
                 <div class="menu_container-sub--item">
@@ -223,7 +231,7 @@
                             LEMONS.
                         </p>
                         <p class="bold">$68</p><button class="yellow_btn" type="button"><i
-                                class="fas fa-shopping-bag"></i></button>
+                                class="fas fa-shopping-bag"></i></button><span></span>
                     </span>
                 </div>
 
@@ -240,7 +248,7 @@
                             Fresh strawberries seved on a soft yogurt ice-cream, crush almonds yeeted on top.
                         </p>
                         <p class="bold">$18</p><button class="yellow_btn" type="button"><i
-                                class="fas fa-shopping-bag"></i></button>
+                                class="fas fa-shopping-bag"></i></button><span></span>
                     </span>
                 </div>
                 <div class="menu_container-sub--item">
@@ -251,7 +259,7 @@
                             Heavy cream, chocolate caramel drip. Blueberry shavings.
                         </p>
                         <p class="bold">$15</p><button class="yellow_btn" type="button"><i
-                                class="fas fa-shopping-bag"></i></button>
+                                class="fas fa-shopping-bag"></i></button><span></span>
                     </span>
                 </div>
                 <div class="menu_container-sub--item">
@@ -262,7 +270,7 @@
                             Warm fudge, creamy chocolate filling, soft cake.
                         </p>
                         <p class="bold">$20</p><button class="yellow_btn" type="button"><i
-                                class="fas fa-shopping-bag"></i></button>
+                                class="fas fa-shopping-bag"></i></button><span></span>
                     </span>
                 </div>
                 <div class="menu_container-sub--item">
@@ -273,7 +281,7 @@
                             What is it? It's a hot fudge sunday just eat it.
                         </p>
                         <p class="bold">$68</p><button class="yellow_btn" type="button"><i
-                                class="fas fa-shopping-bag"></i></button>
+                                class="fas fa-shopping-bag"></i></button><span></span>
                     </span>
                 </div>
 

@@ -30,8 +30,10 @@
 </head>
 
 <body>
-    <!--....................NAVIGATION BAR....................-->
+
     <section id="hours">
+        <!--....................NAVIGATION BAR....................-->
+
         <nav id="nav" class="sticky" role="navigation">
             <button class="nav_btn nav_button" type="button">
                 <span class="bar"></span>
@@ -49,14 +51,17 @@
                 </a>
             </div>
             <div class="nav_shop">
-                <button class="shop_btn" type="button"><i class="fas fa-shopping-bag"></i></button>
+                <button class="shop_btn" type="button"><i class="fas fa-shopping-bag"></i><span
+                        class="circle">0</span></button>
+
             </div>
             <div class="nav_overlay-shop">
 
                 <div class="shop_container-top">
                     <span class="ex"><button>X</button></span>
-                    <h1>Your cart is empty</h1>
-                    <a href="menu.html" class="hours_btn"><button class="main_btn btn_margin">go to menu</button></a>
+                    <span class="open_menu-items">
+                        <h1>your cart is empty</h1>
+                    </span>
                 </div>
                 <div class="shop_container-bottom">
                     <span class='price'>
@@ -64,14 +69,19 @@
                         <p>$0.00</p>
                     </span>
                     <button class="main_btn">checkout</button>
+
+
                     <span class="cart-options">
-                        <button> empty cart</button>
-                        <button>view cart</button>
+                        <button class="emptyButton"> empty cart</button>
+                        <a href="menu.html"><button>go to menu</button></a>
                     </span>
 
                 </div>
             </div>
         </nav>
+
+        <!--.....................NAVIGATION BAR......................-->
+
         <div class="hours_overlay">
             <div class="hours_container" data-aos="zoom-in" data-aos-delay="400">
                 <h3>|</h3>
@@ -92,7 +102,7 @@
 
 
 
-   
+
     <!--.....................FOOTER............................-->
 
     <section id="contact">

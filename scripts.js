@@ -59,7 +59,7 @@ window.addEventListener('load', (event) => {
       var added = function () {
         item_add.remove();
       }
-      setTimeout(added, 777);
+      setTimeout(added, 666);
       
       
       //set selected items in appropriate location
