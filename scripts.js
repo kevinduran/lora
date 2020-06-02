@@ -48,11 +48,7 @@ window.addEventListener('load', (event) => {
       if (shop_list.innerText == 'YOUR CART IS EMPTY') {
         shop_list.innerText = '';
       }
-      //BUG this needs fixing. need to remove the previous html
-      if (shop_total == '$0.00') {
-        shop_total = "";
-      }
-
+      //turn the shop_total string into a number
       var newShopTotal = Number(shop_total);
       //on click, show yellow ball on cart icon that has a #
       var yellowCircle = document.querySelector('.circle');
@@ -68,11 +64,11 @@ window.addEventListener('load', (event) => {
       shop_total = newShopTotal + newNumber;
       var shop_total_element = document.createElement('p');
       shop_total_element.innerHTML = shop_total;
-
+      //BUG?DUPLICATE? create and place clicked menu item on the shop output
       var shop_data_container = document.createElement('li');
       shop_data_container.innerHTML += shop_data + " ";
       shop_data_container.innerHTML += shop_data_two;
-      //item added feature
+      //"item added!" feature 
       var item_add = document.createElement('p');
       item_add.classList.add('item_added')
       item_add.innerText = 'item added!';
@@ -84,11 +80,13 @@ window.addEventListener('load', (event) => {
       setTimeout(added, 666);
       //displaying chosen items to the DOM
       shop_list.innerHTML += shop_data_container.innerHTML + "<br>" + "<br>";
-      var replaceChild = document.querySelector('.replace');
-      var oldChild = document.querySelector('.price_num');
+      //might not need...investigate further...
+      //var replaceChild = document.querySelector('.replace');
+      //var oldChild = document.querySelector('.price_num');
     });
   };
 });
+//empty cart items button
 var emptyButton = document.querySelector('.emptyButton');
 emptyButton.addEventListener('click', function () {
   var shop_list = document.querySelector('.open_menu-items');
