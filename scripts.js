@@ -32,7 +32,7 @@ $(".nav_shop, .ex").on("click", function () {
 window.addEventListener('load', (event) => {
   var yellow_btn_shop = document.getElementsByClassName('yellow_btn');
   var shop_total = document.querySelector('.price_num').innerText;
-  
+
 
   //loop through buttons to collect the data of the clicked item
   for (var i = 0; i < yellow_btn_shop.length; i++) {
@@ -42,14 +42,14 @@ window.addEventListener('load', (event) => {
 
       var shop_list = document.querySelector('.open_menu-items');
       if (shop_list.innerText == 'YOUR CART IS EMPTY') {
-        shop_list.innerText = '';
+        shop_list.innerHTML = '';
       }
       if (shop_total == '$0.00') {
         shop_total = "";
       }
-      
+
       newShopTotal = Number(shop_total);
-      
+
 
 
 
@@ -64,11 +64,11 @@ window.addEventListener('load', (event) => {
       var shop_data_two = this.parentNode.getElementsByClassName('bold')[1].innerHTML;
       var shop_data_two_number = shop_data_two.slice(-2);
       var newNumber = Number(shop_data_two_number);
-     shop_total = newShopTotal + newNumber;
-     
-     var shop_total_element = document.createElement('p');
-     shop_total_element.innerHTML = shop_total;
-     alert(shop_total_element.innerHTML);
+      shop_total = newShopTotal + newNumber;
+
+      var shop_total_element = document.createElement('p');
+      shop_total_element.innerHTML = shop_total;
+      alert(shop_total_element.innerHTML);
 
       //create a new element to hold the text , add css class to it
       var shop_data_container = document.createElement('li');
@@ -90,7 +90,7 @@ window.addEventListener('load', (event) => {
       //set selected items in appropriate location
       shop_list.innerHTML += shop_data_container.innerHTML + "<br>" + "<br>";
       var replaceChild = document.querySelector('.replace');
-      var oldChild = document.querySelector('.price_num'); 
+      var oldChild = document.querySelector('.price_num');
     });
 
   };
