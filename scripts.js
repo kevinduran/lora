@@ -31,25 +31,45 @@ $(".nav_shop, .ex").on("click", function () {
 //variable declarations
 window.addEventListener('load', (event) => {
   var yellow_btn_shop = document.getElementsByClassName('yellow_btn');
+  var shop_total = document.querySelector('.price_num').innerText;
+  
 
   //loop through buttons to collect the data of the clicked item
   for (var i = 0; i < yellow_btn_shop.length; i++) {
     yellow_btn_shop[i].addEventListener("click", function () {
       //set the location of our selected items
+
+
       var shop_list = document.querySelector('.open_menu-items');
-      if(shop_list.innerText == 'YOUR CART IS EMPTY'){
+      if (shop_list.innerText == 'YOUR CART IS EMPTY') {
         shop_list.innerText = '';
       }
+      if (shop_total == '$0.00') {
+        shop_total = "";
+      }
+      
+      newShopTotal = Number(shop_total);
+      
+
+
+
       var yellowCircle = document.querySelector('.circle');
       yellowCircle.style.visibility = 'visible';
       yellowCircle.innerHTML++;
 
       //collect the text of the selected element 
-      //HERE IS WHERE YOU START
-        //possibly create 2 variables to hold both specific things
+
+      //possibly create 2 variables to hold both specific things
       var shop_data = this.parentNode.getElementsByClassName('bold')[0].innerHTML;
       var shop_data_two = this.parentNode.getElementsByClassName('bold')[1].innerHTML;
+      var shop_data_two_number = shop_data_two.slice(-2);
+      var newNumber = Number(shop_data_two_number);
+     shop_total = newShopTotal + newNumber;
      
+     var shop_total_element = document.createElement('p');
+     shop_total_element.innerHTML = shop_total;
+     alert(shop_total_element.innerHTML);
+
       //create a new element to hold the text , add css class to it
       var shop_data_container = document.createElement('li');
       //place text inside newly created element
@@ -65,10 +85,12 @@ window.addEventListener('load', (event) => {
         item_add.remove();
       }
       setTimeout(added, 666);
-      
-      
+
+
       //set selected items in appropriate location
       shop_list.innerHTML += shop_data_container.innerHTML + "<br>" + "<br>";
+      var replaceChild = document.querySelector('.replace');
+      var oldChild = document.querySelector('.price_num'); 
     });
 
   };
