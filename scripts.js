@@ -44,12 +44,17 @@ window.addEventListener('load', (event) => {
       yellowCircle.style.visibility = 'visible';
       yellowCircle.innerHTML++;
 
-      //collect the text of the selected element
-      var shop_data = this.parentNode.innerText;
+      //collect the text of the selected element 
+      //HERE IS WHERE YOU START
+        //possibly create 2 variables to hold both specific things
+      var shop_data = this.parentNode.getElementsByClassName('bold')[0].innerHTML;
+      var shop_data_two = this.parentNode.getElementsByClassName('bold')[1].innerHTML;
+     
       //create a new element to hold the text , add css class to it
       var shop_data_container = document.createElement('li');
       //place text inside newly created element
-      shop_data_container.innerHTML = shop_data;
+      shop_data_container.innerHTML += shop_data + " ";
+      shop_data_container.innerHTML += shop_data_two;
       //instead of alert.insert into HTML
       var item_add = document.createElement('p');
       item_add.classList.add('item_added')
