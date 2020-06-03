@@ -60,14 +60,9 @@ window.addEventListener('load', (event) => {
       //need to store the number in  a variable
       var shop_data_two_number = shop_data_two.slice(-2);
       var newNumber = Number(shop_data_two_number);
-      
       sum += newNumber;
       shop_total_display.innerText = "$" + sum + ".00";
-      //BUG need to converte to a stringe after?
-      // shop_total = newShopTotal + newNumber;
-      // var shop_total_element = document.createElement('p');
-      // shop_total_element.innerHTML = shop_total;
-      //BUG?DUPLICATE? create and place clicked menu item on the shop output
+      //create and place clicked menu item and price on the shop output
       var shop_data_container = document.createElement('li');
       shop_data_container.innerHTML += shop_data + " ";
       shop_data_container.innerHTML += shop_data_two;
@@ -82,7 +77,7 @@ window.addEventListener('load', (event) => {
       }
       setTimeout(added, 666);
       //displaying chosen items to the DOM
-      shop_list.innerHTML += shop_data_container.innerHTML + "<br>" + "<br>";
+      // shop_list.innerHTML += shop_data_container.innerHTML + "<br>" + "<br>";
     });
   };
 });
