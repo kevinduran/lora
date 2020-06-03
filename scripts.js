@@ -36,7 +36,7 @@ window.addEventListener('load', (event) => {
   //creating variables
   var yellow_btn_shop = document.getElementsByClassName('yellow_btn');
   var shop_total = document.querySelector('.price_num').innerText;
-  var shop_total_display =  document.querySelector('.price_num');
+  var shop_total_display = document.querySelector('.price_num');
   var sum = 0;
   //loop through all yellow shop buttons...
   for (var i = 0; i < yellow_btn_shop.length; i++) {
@@ -84,15 +84,16 @@ window.addEventListener('load', (event) => {
       shop_list.innerHTML += shop_data_container.innerHTML + "<br>" + "<br>";
     });
   };
-});
-//empty cart items button
-var emptyButton = document.querySelector('.emptyButton');
-emptyButton.addEventListener('click', function () {
-  var shop_list = document.querySelector('.open_menu-items');
-  shop_list.innerHTML = '';
-  var yellowCircle = document.querySelector('.circle');
-  yellowCircle.innerText = 0;
-  //empty the total price
-  var emptyTotal = document.querySelector('.price_num');
-  emptyTotal.innerText = '$0.00';
+  //empty cart items button
+  var emptyButton = document.querySelector('.emptyButton');
+  emptyButton.addEventListener('click', function () {
+    var shop_list = document.querySelector('.open_menu-items');
+    shop_list.innerHTML = '';
+    var yellowCircle = document.querySelector('.circle');
+    yellowCircle.innerText = 0;
+    //empty the total price
+    var emptyTotal = document.querySelector('.price_num');
+    emptyTotal.innerText = '$0.00';
+    sum = 0;
+  });
 });
