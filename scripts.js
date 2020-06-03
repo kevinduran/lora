@@ -24,7 +24,6 @@ $(".nav_shop, .ex").on("click", function () {
     $(this).addClass("active");
     $("body").addClass("shop-open");
   }
-
   isActive = !isActive;
 });
 
@@ -37,8 +36,8 @@ window.addEventListener('load', (event) => {
   //creating variables
   var yellow_btn_shop = document.getElementsByClassName('yellow_btn');
   var shop_total = document.querySelector('.price_num').innerText;
-
-
+  var shop_total_display =  document.querySelector('.price_num');
+  var sum = 0;
   //loop through all yellow shop buttons...
   for (var i = 0; i < yellow_btn_shop.length; i++) {
     //than way when you click, it only points to the clicked element
@@ -48,6 +47,7 @@ window.addEventListener('load', (event) => {
       if (shop_list.innerText == 'YOUR CART IS EMPTY') {
         shop_list.innerText = '';
       }
+      shop_total_display.innerText = '';
       //turn the shop_total string into a number
       var newShopTotal = Number(shop_total);
       //on click, show yellow ball on cart icon that has a #
@@ -60,10 +60,13 @@ window.addEventListener('load', (event) => {
       //need to store the number in  a variable
       var shop_data_two_number = shop_data_two.slice(-2);
       var newNumber = Number(shop_data_two_number);
+      
+      sum += newNumber;
+      shop_total_display.innerText = "$" + sum + ".00";
       //BUG need to converte to a stringe after?
-      shop_total = newShopTotal + newNumber;
-      var shop_total_element = document.createElement('p');
-      shop_total_element.innerHTML = shop_total;
+      // shop_total = newShopTotal + newNumber;
+      // var shop_total_element = document.createElement('p');
+      // shop_total_element.innerHTML = shop_total;
       //BUG?DUPLICATE? create and place clicked menu item on the shop output
       var shop_data_container = document.createElement('li');
       shop_data_container.innerHTML += shop_data + " ";
@@ -80,9 +83,6 @@ window.addEventListener('load', (event) => {
       setTimeout(added, 666);
       //displaying chosen items to the DOM
       shop_list.innerHTML += shop_data_container.innerHTML + "<br>" + "<br>";
-      //might not need...investigate further...
-      //var replaceChild = document.querySelector('.replace');
-      //var oldChild = document.querySelector('.price_num');
     });
   };
 });
@@ -93,5 +93,7 @@ emptyButton.addEventListener('click', function () {
   shop_list.innerHTML = '';
   var yellowCircle = document.querySelector('.circle');
   yellowCircle.innerText = 0;
-
+  //empty the total price
+  var emptyTotal = document.querySelector('.price_num');
+  emptyTotal.innerText = '$0.00';
 });
