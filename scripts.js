@@ -38,6 +38,11 @@ window.addEventListener('load', (event) => {
   var shop_total = document.querySelector('.price_num').innerText;
   var shop_total_display = document.querySelector('.price_num');
   var sum = 0;
+  var shop_list = document.querySelector('.open_menu-items');
+  //add text to shoplist to begin with
+  if (shop_total_display.innerText == '$0.00'){
+    shop_list.innerText = 'YOUR CART IS EMPTY';
+  }
   //loop through all yellow shop buttons...
   for (var i = 0; i < yellow_btn_shop.length; i++) {
     //than way when you click, it only points to the clicked element
@@ -88,12 +93,13 @@ window.addEventListener('load', (event) => {
   var emptyButton = document.querySelector('.emptyButton');
   emptyButton.addEventListener('click', function () {
     var shop_list = document.querySelector('.open_menu-items');
-    shop_list.innerHTML = '';
+    shop_list.innerHTML = 'YOUR CART IS EMPTY';
     var yellowCircle = document.querySelector('.circle');
     yellowCircle.innerText = 0;
     //empty the total price
     var emptyTotal = document.querySelector('.price_num');
     emptyTotal.innerText = '$0.00';
     sum = 0;
+    
   });
 });
