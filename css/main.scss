@@ -266,6 +266,7 @@ body {
   .shop_container-top {
     margin-bottom: 1em;
     position: relative;
+    overflow:scroll;
 
     .open_menu-items {
       color: white;
@@ -278,83 +279,83 @@ body {
       }
     }
 
-    .ex {
-      button {
-        color: $nav;
-        position: absolute;
-        top: -135px;
-        right: 9%;
-        font-size: 2.8em;
-        border: 0;
-        cursor: pointer;
-        background: 0;
 
-        &:focus {
-          outline: none;
-        }
-      }
-    }
+  }
 
-    h1 {
-      color: white;
-      text-align: center;
-      padding-bottom: 2em;
-      font-family: "Inria Serif", serif;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 1.1em;
+  .ex button {
+    position: absolute;
+    top: 3%;
+    right: 9%;
+    font-size: 2.8em;
+    border: 0;
+    cursor: pointer;
+    background: 0;
+
+    &:focus {
+      outline: none;
     }
   }
 
-  .shop_container-bottom {
-    .price {
-      display: flex;
-      justify-content: space-between;
-      width: 70%;
-      margin: 0 auto;
-      border-top: 3px solid $header-main;
-      padding: 10px 0 40px 0;
-      letter-spacing: 3px;
-
-      p {
-        font-size: 1.3em;
-      }
-    }
-
-    button {
-      cursor: pointer;
-    }
-
-    .cart-options {
-      display: flex;
-      justify-content: space-around;
-      padding-top: 3em;
-
-      button {
-        border: 0;
-        background: 0;
-        font-size: 1.2em;
-        border-bottom: 3px solid $header-main;
-        padding-bottom: 10px;
-        letter-spacing: 3px;
-        cursor: pointer;
-
-        &:focus {
-          outline: none;
-        }
-      }
-
-    }
-  }
-
-  p {
+  h1 {
     color: white;
+    text-align: center;
+    padding-bottom: 2em;
+    font-family: "Inria Serif", serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.1em;
+  }
+}
+
+.shop_container-bottom {
+  .price {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    border-top: 3px solid $header-main;
+    padding: 10px 0 40px 0;
+    letter-spacing: 3px;
+
+    p {
+      font-size: 1.3em;
+    }
   }
 
   button {
-    color: white;
+    cursor: pointer;
+  }
+
+  .cart-options {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3em;
+
+    button {
+      border: 0;
+      background: 0;
+      font-size: 1.2em;
+      border-bottom: 3px solid $header-main;
+      padding-bottom: 10px;
+      letter-spacing: 3px;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
   }
 }
+
+p {
+  color: white;
+}
+
+button {
+  color: white;
+}
+
 
 /* -----------------------------NAVIGATION----------------------------*/
 
@@ -929,29 +930,29 @@ body {
     position: relative;
   }
 
-  .nav_overlay-shop .shop_container-top {
-    margin-bottom: 3em;
-  }
-
-  .ex button {
-    position: absolute;
-    top: -10%;
-    right: 100%; //remember to fix this
-  }
-
   .item_added {
     padding: 0 0 0 10px !important;
     font-size: 1.2em !important;
   }
 
+  .shop_container-top {
+    height: 100px;
+    max-height: 200px;
+    overflow: scroll;
+  }
+
+
   .nav_overlay-shop {
     padding-top: 7em;
   }
 
-  .nav_overlay-shop .shop_container-top .ex button {
-    top: -87px;
-    right: 8%;
+  .nav_overlay-shop .ex button {
+    position: relative;
+    top: -91px;
+    right: -83%;
   }
+
+  
 }
 
 @media only screen and (min-width: 550px) {
@@ -995,6 +996,10 @@ body {
       padding-top: 6px;
       transition: all 1s ease;
     }
+  }
+
+  .shop_container-top {
+    height: 200px;
   }
 
   .header_container {
