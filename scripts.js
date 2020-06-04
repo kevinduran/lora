@@ -70,7 +70,7 @@ window.addEventListener('load', (event) => {
       // display on the dom with a money sign for better look
       shop_total_display.innerText = "$" + sum + ".00";
       var shop_data_container = document.createElement('li');
-      shop_data_container.innerHTML += shop_data + " ";
+      shop_data_container.innerHTML += shop_data + " ..... ";
       shop_data_container.innerHTML += shop_data_two;
       //"item added!" feature 
       var item_add = document.createElement('p');
