@@ -1125,6 +1125,8 @@ body {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  .second_large_contact-container {
     margin-top: 84px;
   }
 }
