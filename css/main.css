@@ -996,6 +996,13 @@ body {
     padding: 0 0 0 10px !important;
     font-size: 1.2em !important;
   }
+  .nav_overlay-shop {
+    padding-top: 7em;
+  }
+  .nav_overlay-shop .shop_container-top .ex button {
+    top: -87px;
+    right: 8%;
+  }
 }
 
 @media only screen and (min-width: 550px) {

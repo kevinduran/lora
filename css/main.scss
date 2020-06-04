@@ -938,9 +938,19 @@ body {
     top: -10%;
     right: 100%; //remember to fix this
   }
+
   .item_added {
     padding: 0 0 0 10px !important;
     font-size: 1.2em !important;
+  }
+
+  .nav_overlay-shop {
+    padding-top: 7em;
+  }
+
+  .nav_overlay-shop .shop_container-top .ex button {
+    top: -87px;
+    right: 8%;
   }
 }
 
@@ -948,7 +958,7 @@ body {
   .header_container {
     left: 50%;
   }
-  
+
 }
 
 @media only screen and (min-width: 800px) {
@@ -1071,9 +1081,10 @@ body {
   .large_contact-container {
     display: flex;
     justify-content: space-evenly;
-   
+
   }
-  .second_large_contact-container{
+
+  .second_large_contact-container {
     margin-top: 84px;
   }
 }
