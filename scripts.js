@@ -62,16 +62,13 @@ window.addEventListener('load', (event) => {
       //use variables to store the heading and price of each item
       var shop_data = this.parentNode.getElementsByClassName('bold')[0].innerHTML;
       var shop_data_two = this.parentNode.getElementsByClassName('bold')[1].innerHTML;
-      //need to store the number in  a variable
+      //need to store the actual number in  a variable
       var shop_data_two_number = shop_data_two.slice(-2);
       var newNumber = Number(shop_data_two_number);
+      //properly adjust the new sum total
       sum += newNumber;
+      // display on the dom with a money sign for better look
       shop_total_display.innerText = "$" + sum + ".00";
-      //BUG need to converte to a stringe after?
-      // shop_total = newShopTotal + newNumber;
-      // var shop_total_element = document.createElement('p');
-      // shop_total_element.innerHTML = shop_total;
-      //create and place clicked menu item on the shop output
       var shop_data_container = document.createElement('li');
       shop_data_container.innerHTML += shop_data + " ";
       shop_data_container.innerHTML += shop_data_two;

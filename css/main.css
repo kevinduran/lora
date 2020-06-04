@@ -807,7 +807,7 @@ body {
 
 .hours_overlay {
   background-color: rgba(1, 1, 1, 0.8);
-  height: 99vh;
+  height: 110vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
