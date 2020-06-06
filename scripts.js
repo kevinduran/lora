@@ -40,7 +40,7 @@ window.addEventListener('load', (event) => {
   var sum = 0;
   var shop_list = document.querySelector('.open_menu-items');
   //add text to shoplist to begin with
-  if (shop_total_display.innerText == '$0.00'){
+  if (shop_total_display.innerText == '$0.00') {
     shop_list.innerText = 'YOUR CART IS EMPTY';
   }
   //loop through all yellow shop buttons...
@@ -81,7 +81,7 @@ window.addEventListener('load', (event) => {
       var added = function () {
         item_add.remove();
       }
-      setTimeout(added, 666);
+      setTimeout(added, 550);
       //displaying chosen items to the DOM
       shop_list.innerHTML += shop_data_container.innerHTML + "<br>" + "<br>";
     });
@@ -97,6 +97,6 @@ window.addEventListener('load', (event) => {
     var emptyTotal = document.querySelector('.price_num');
     emptyTotal.innerText = '$0.00';
     sum = 0;
-    
+
   });
 });
