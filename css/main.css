@@ -977,7 +977,8 @@ button {
   }
   .nav_logo {
     position: relative;
-    top: 15%;
+    top: 16%;
+    right: -1%;
   }
   .nav_shop .shop_btn {
     font-size: 1em;
