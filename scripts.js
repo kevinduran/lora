@@ -82,8 +82,13 @@ window.addEventListener('load', (event) => {
         item_add.remove();
       }
       setTimeout(added, 550);
+      
       //displaying chosen items to the DOM
       shop_list.innerHTML += shop_data_container.innerHTML + "<br>" + "<br>";
+       //LOCAL STORAGE
+       localStorage.setItem('shop_list', shop_list.innerText);
+       console.log(localStorage);
+
     });
   };
   //empty cart items button
@@ -99,4 +104,11 @@ window.addEventListener('load', (event) => {
     sum = 0;
 
   });
+
 });
+
+console.log(localStorage);
+
+
+
+
