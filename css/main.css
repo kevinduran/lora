@@ -990,11 +990,11 @@ button {
   }
   .nav_logo {
     position: relative;
-    top: 17%;
+    top: -10px;
     right: -2%;
   }
   .nav_shop .shop_btn {
-    font-size: 1em;
+    font-size: 15px;
     top: 10%;
     position: relative;
   }
