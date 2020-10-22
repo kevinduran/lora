@@ -962,18 +962,21 @@ button {
 @media only screen and (max-width: 450px) {
   #header {
     background: url(img/header-background.jpg) no-repeat center cover;
-    background-attachment: initial;
     height: 100vh;
+    background-attachment: initial;
   }
   #experience {
+    background-attachment: initial;
     height: 100vh;
     background: url(img/experience.jpg) no-repeat center cover;
   }
   #hours {
+    background-attachment: initial;
     background: url(img/hours_header-small.jpg) no-repeat center cover;
     height: 100vh;
   }
   #res {
+    background-attachment: initial;
     height: 100vh;
     background: url(img/res-small.jpg) no-repeat center cover;
   }

@@ -80,7 +80,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 10;
   transition: all 1s ease;
-  
+
 }
 
 .forward {
@@ -203,7 +203,7 @@ body {
   z-index: 1000;
   position: relative;
   top: -30px;
-  opacity:0;
+  opacity: 0;
 
   h1 {
     font-family: "Montserrat Subrayada", sans-serif;
@@ -221,9 +221,9 @@ body {
 
 .nav_shop {
   transition: all 1s ease;
-  position:relative;
-  top:-30px;
-  opacity:0;
+  position: relative;
+  top: -30px;
+  opacity: 0;
 
   .shop_btn {
     color: $nav;
@@ -377,7 +377,7 @@ button {
   background-size: cover;
   height: 110vh;
   position: relative;
-  opacity:0;
+  opacity: 0;
 }
 
 .header_container {
@@ -901,21 +901,28 @@ button {
 @media only screen and (max-width: 450px) {
   #header {
     background: url(img/header-background.jpg) no-repeat center cover;
-    background-attachment:initial;
     height: 100vh;
+    background-attachment: initial;
+
   }
 
   #experience {
+    background-attachment: initial;
+
     height: 100vh;
     background: url(img/experience.jpg) no-repeat center cover;
   }
 
   #hours {
+    background-attachment: initial;
+
     background: url(img/hours_header-small.jpg) no-repeat center cover;
     height: 100vh;
   }
 
   #res {
+    background-attachment: initial;
+
     height: 100vh;
     background: url(img/res-small.jpg) no-repeat center cover;
   }
@@ -932,7 +939,7 @@ button {
     top: 10%;
   }
 
-  .nav_shop{
+  .nav_shop {
     font-size: 1.5em;
   }
 
@@ -970,9 +977,9 @@ button {
     right: -70%;
   }
 
-  .nav_btn{
+  .nav_btn {
     width: 2.7em;
-    
+
   }
 
 
