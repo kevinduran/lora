@@ -977,8 +977,10 @@ button {
     background: url(img/res-small.jpg) no-repeat center;
   }
   .header_container {
-    left: 38%;
+    left: 36%;
     top: 45%;
+    -webkit-transition: 1s ease all;
+    transition: 1s ease all;
   }
   .nav_logo h1 {
     font-size: 1.4em;
