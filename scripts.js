@@ -128,7 +128,7 @@ gsap.to('.nav_btn', {
   rotation:0.01,
   duration:1,
   opacity:1,
-  y:20
+  y:200
 })
 
 gsap.to('.nav_logo', {
