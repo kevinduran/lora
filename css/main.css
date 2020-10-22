@@ -1018,13 +1018,29 @@ button {
     right: -70%;
   }
   .nav_btn {
-    width: 2em;
+    width: 2.5em;
   }
 }
 
 @media only screen and (min-width: 550px) {
   .header_container {
     left: 50%;
+  }
+  .nav_btn {
+    width: 2.5em;
+  }
+  .nav_logo h1 {
+    font-size: 1.4em;
+    position: relative;
+    top: 10%;
+  }
+  .nav_shop {
+    font-size: 1em;
+  }
+  .nav_logo {
+    position: relative;
+    top: -10px;
+    right: -2%;
   }
 }
 
