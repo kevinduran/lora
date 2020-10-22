@@ -125,6 +125,7 @@ gsap.to('#nav', {
 
 gsap.to('.nav_btn', {
   delay:2,
+  rotation:0.01,
   duration:1,
   opacity:1,
   y:20
