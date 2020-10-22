@@ -74,12 +74,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  height: 13vh;
+  height: 0;
   position: fixed;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 10;
   transition: all 1s ease;
+  
 }
 
 .forward {
@@ -376,6 +377,7 @@ button {
   background-size: cover;
   height: 110vh;
   position: relative;
+  opacity:0;
 }
 
 .header_container {

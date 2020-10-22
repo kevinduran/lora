@@ -112,22 +112,33 @@ window.addEventListener('load', (event) => {
 
 
 // GSAP ANIMATIONS header
+gsap.to('#header', {
+  delay:1,
+  duration:0.5,
+  opacity:1
+})
+gsap.to('#nav', {
+  delay:0.5,
+  duration:0.5,
+  height:100
+})
+
 
 gsap.to('.nav_btn', {
-  delay:0.5,
+  delay:2,
   duration:1,
   opacity:1,
   y:20
 })
 
 gsap.to('.nav_logo', {
-  delay:0.9,
+  delay:2.4,
   duration:1,
   opacity:1,
   y:24
 })
 gsap.to('.nav_shop', {
-  delay:1.3,
+  delay:2.7,
   duration:0.3,
   opacity:1,
   y:20

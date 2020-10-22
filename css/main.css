@@ -75,7 +75,7 @@ body {
       flex-wrap: wrap;
   -ms-flex-line-pack: center;
       align-content: center;
-  height: 13vh;
+  height: 0;
   position: fixed;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -388,6 +388,7 @@ button {
   background-size: cover;
   height: 110vh;
   position: relative;
+  opacity: 0;
 }
 
 .header_container {
