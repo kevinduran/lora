@@ -101,6 +101,8 @@ body {
   outline: 0;
   padding: 0;
   border: 0;
+  opacity: 0;
+  top: -25px;
 }
 
 .bar, .bar::before, .bar::after {
@@ -205,6 +207,9 @@ body {
 
 .nav_logo {
   z-index: 1000;
+  position: relative;
+  top: -30px;
+  opacity: 0;
 }
 
 .nav_logo h1 {
@@ -224,6 +229,9 @@ body {
 .nav_shop {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  position: relative;
+  top: -30px;
+  opacity: 0;
 }
 
 .nav_shop .shop_btn {

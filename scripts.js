@@ -1,3 +1,5 @@
+//const { getHeapSpaceStatistics } = require("v8");
+
 //NAV MENU OPEN
 var isActive = false;
 $(".nav_button").on("click", function () {
@@ -107,8 +109,28 @@ window.addEventListener('load', (event) => {
 
 });
 
-console.log(localStorage);
 
 
+// GSAP ANIMATIONS header
+
+gsap.to('.nav_btn', {
+  delay:0.5,
+  duration:1,
+  opacity:1,
+  y:20
+})
+
+gsap.to('.nav_logo', {
+  delay:0.9,
+  duration:1,
+  opacity:1,
+  y:24
+})
+gsap.to('.nav_shop', {
+  delay:1.3,
+  duration:0.3,
+  opacity:1,
+  y:20
+})
 
 
