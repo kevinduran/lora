@@ -125,14 +125,14 @@ gsap.to('#nav', {
 
 gsap.to('.nav_btn', {
   delay:2,
-  duration:1.3,
+  duration:1,
   opacity:1,
   y:20
 })
 
 gsap.to('.nav_logo', {
   delay:2.4,
-  duration:1.3,
+  duration:1,
   opacity:1,
   y:24
 })
