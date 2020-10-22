@@ -925,9 +925,13 @@ button {
   }
 
   .nav_logo h1 {
-    font-size: 2em;
+    font-size: 1.2em;
     position: relative;
     top: 10%;
+  }
+
+  .nav_shop{
+    font-size: 1em;
   }
 
   .nav_logo {
@@ -962,6 +966,10 @@ button {
     position: relative;
     top: -88px;
     right: -70%;
+  }
+
+  .nav_btn{
+    width: 2em;
   }
 
 

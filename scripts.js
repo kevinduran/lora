@@ -123,7 +123,6 @@ gsap.to('#nav', {
   height:100
 })
 
-
 gsap.to('.nav_btn', {
   delay:2,
   duration:1,
