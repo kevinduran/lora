@@ -142,5 +142,24 @@ gsap.to('.nav_shop', {
   opacity:1,
   y:20
 })
+gsap.to('.header_logo', {
+  delay:3.5,
+  opacity:1,
+  duration:0.1,
+  y:10
+})
+gsap.to('.main_btn', {
+  delay:3.6,
+  opacity:1,
+  duration:0.5,
+  y:10
+
+})
+gsap.to('.header_logo-two', {
+  delay:3.6,
+  opacity:1,
+  duration:0.8,
+  x:-15
+})
 
 
