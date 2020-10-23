@@ -117,6 +117,21 @@ gsap.to('#header', {
   duration:0.5,
   opacity:1
 })
+gsap.to('#hours', {
+  delay:1,
+  duration:0.5,
+  opacity:1
+})
+gsap.to('#menu', {
+  delay:1,
+  duration:0.5,
+  opacity:1
+})
+gsap.to('#contact', {
+  delay:1,
+  duration:0.5,
+  opacity:1
+})
 gsap.to('#nav', {
   delay:0.5,
   duration:0.5,
@@ -156,10 +171,12 @@ gsap.to('.main_btn', {
 
 })
 gsap.to('.header_logo-two', {
-  delay:3.6,
+  delay:3.5,
   opacity:1,
-  duration:0.8,
+  duration:0.3,
   x:-15
 })
 
 
+// my problem is that gsap is adding a header to every page? (hours.html, contact.html, menu.html)
+//possible fix - add if statement logic. if hours.html then...

@@ -377,7 +377,7 @@ button {
   background-size: cover;
   height: 110vh;
   position: relative;
-  opacity: 0;
+  opacity: 1;
 }
 
 .header_container {
@@ -795,7 +795,9 @@ button {
   height: 100vh;
   position: relative;
   border-bottom: 10px solid $header-main;
+  opacity:0;
 }
+
 
 .hours_overlay {
   background-color: rgba(1, 1, 1, 0.8);
@@ -812,6 +814,7 @@ button {
   flex-direction: column;
   justify-content: center;
   transition: 1s all ease;
+
 
   h1 {
     text-align: center;

@@ -388,7 +388,7 @@ button {
   background-size: cover;
   height: 110vh;
   position: relative;
-  opacity: 0;
+  opacity: 1;
 }
 
 .header_container {
@@ -840,6 +840,7 @@ button {
   height: 100vh;
   position: relative;
   border-bottom: 10px solid rgba(237, 161, 73, 0.8);
+  opacity: 0;
 }
 
 .hours_overlay {
