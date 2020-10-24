@@ -177,6 +177,3 @@ gsap.to('.header_logo-two', {
   x:-15
 })
 
-
-// my problem is that gsap is adding a header to every page? (hours.html, contact.html, menu.html)
-//possible fix - add if statement logic. if hours.html then...
