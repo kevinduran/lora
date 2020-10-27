@@ -912,7 +912,7 @@ button {
 }
 
 #contact h2 {
-  font-family: "Inria Serif"bold;
+  font-family: "Inria Serif" bold;
   padding: 90px 0 30px 0;
   letter-spacing: 2px;
 }
@@ -988,7 +988,7 @@ button {
     background: url(img/res-small.jpg) no-repeat center cover;
   }
   .header_container {
-    left: 38%;
+    left: 40%;
     top: 50%;
     -webkit-transition: 1s ease all;
     transition: 1s ease all;
@@ -1036,7 +1036,7 @@ button {
 
 @media only screen and (min-width: 550px) {
   .header_container {
-    left: 50%;
+    left: 52%;
   }
 }
 
