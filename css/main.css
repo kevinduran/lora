@@ -1202,9 +1202,6 @@ button {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .second_large_contact-container {
-    margin-top: 84px;
-  }
 }
 
 @media only screen and (min-width: 1200px) {

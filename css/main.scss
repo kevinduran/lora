@@ -905,10 +905,10 @@ button {
   body {
     margin-right: -20px;
   }
-  #hours{
-    height:111vh;
+  #hours {
+    height: 111vh;
   }
-  
+
   .header_container {
     width: 165px;
   }
@@ -922,11 +922,11 @@ button {
     padding: 12px 30px;
     font-size: 14px;
   }
-  .hours_container{
-    h1{
+  .hours_container {
+    h1 {
       font-size: 2em;
     }
-    h2{
+    h2 {
       font-size: 1.4em;
     }
   }
@@ -950,7 +950,6 @@ button {
     background: url(img/hours_header-small.jpg) no-repeat center cover;
     height: 111vh;
   }
-  
 
   #res {
     background-attachment: initial;
@@ -1147,10 +1146,6 @@ button {
   .large_contact-container {
     display: flex;
     justify-content: space-evenly;
-  }
-
-  .second_large_contact-container {
-    margin-top: 84px;
   }
 }
 
