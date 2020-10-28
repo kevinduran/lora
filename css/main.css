@@ -837,7 +837,7 @@ button {
 /* -----------------------------RES----------------------------*/
 /* -----------------------------HOURS----------------------------*/
 #hours {
-  background: url(img/hours_header-small.jpg) no-repeat center center fixed;
+  background: url(img/about-one-small.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   position: relative;
@@ -987,6 +987,12 @@ button {
   .main_btn {
     padding: 12px 30px;
     font-size: 14px;
+  }
+  .hours_container h1 {
+    font-size: 2em;
+  }
+  .hours_container h2 {
+    font-size: 1.4em;
   }
 }
 
