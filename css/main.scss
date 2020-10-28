@@ -454,7 +454,7 @@ button {
 
 .hours_btn {
   text-decoration: none;
-  margin-top:-18px;
+  margin-top: -18px;
   padding-bottom: 19px;
 }
 
@@ -901,6 +901,26 @@ button {
 /* -----------------------------CONTACT----------------------------*/
 
 /* -----------------------------MEDIA QUERIES----------------------------*/
+@media only screen and (max-width: 350px) {
+  body {
+    margin-right: -20px;
+  }
+  
+  .header_container {
+    width: 165px;
+  }
+  .header_logo {
+    font-size: 5em;
+  }
+  .header_logo-two {
+    font-size: 1.1em;
+  }
+  .main_btn {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   #header {
     background: url(img/header-background.jpg) no-repeat center cover;
@@ -979,6 +999,9 @@ button {
 
   .nav_btn {
     width: 2.7em;
+  }
+  .about_img {
+    width: 170px;
   }
 }
 
