@@ -972,6 +972,9 @@ button {
   body {
     margin-right: -20px;
   }
+  #hours {
+    height: 111vh;
+  }
   .header_container {
     width: 165px;
   }
@@ -1001,7 +1004,7 @@ button {
   #hours {
     background-attachment: initial;
     background: url(img/hours_header-small.jpg) no-repeat center cover;
-    height: 100vh;
+    height: 111vh;
   }
   #res {
     background-attachment: initial;
