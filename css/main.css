@@ -9,6 +9,7 @@ html {
 *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  border: 1px solid red;
 }
 
 body,
@@ -960,7 +961,7 @@ button {
 }
 
 .last {
-  padding-bottom: 30px !important;
+  padding: 5px !important;
 }
 
 .draw-border {
@@ -972,7 +973,7 @@ button {
   position: relative;
   margin: 0 auto;
   padding: 9px 26px;
-  margin-top: 30px;
+  margin: 30px 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #f5f5f5;
   font-size: 1.2em;
@@ -1084,68 +1085,74 @@ button {
     background: url(img/hours_header-small.jpg) no-repeat center cover;
     height: 100vh;
   }
-  #res {
+  .hours_container h1 {
+    font-size: 1.8em;
+  }
+  .hours_container h2 {
+    font-size: 1.4em;
+  }
+  .hours_container #res {
     background-attachment: initial;
     height: 100vh;
     background: url(img/res-small.jpg) no-repeat center cover;
   }
-  .header_container {
+  .hours_container .header_container {
     left: 40%;
     top: 50%;
     -webkit-transition: 1s ease all;
     transition: 1s ease all;
   }
-  .nav_logo h1 {
+  .hours_container .nav_logo h1 {
     font-size: 1.9em;
     position: relative;
     top: 10%;
   }
-  .nav_shop {
+  .hours_container .nav_shop {
     font-size: 1.5em;
     position: relative;
     top: -10px;
   }
-  .nav_logo {
+  .hours_container .nav_logo {
     position: relative;
     top: -10px;
     right: -2%;
   }
-  .nav_shop .shop_btn {
+  .hours_container .nav_shop .shop_btn {
     font-size: 15px;
     position: relative;
   }
-  .item_added {
+  .hours_container .item_added {
     padding: 0 0 0 10px !important;
     font-size: 1.2em !important;
   }
-  .shop_container-top {
+  .hours_container .shop_container-top {
     height: 100px;
     max-height: 200px;
     overflow: scroll;
   }
-  .nav_overlay-shop {
+  .hours_container .nav_overlay-shop {
     padding-top: 7em;
   }
-  .nav_overlay-shop .ex button {
+  .hours_container .nav_overlay-shop .ex button {
     position: relative;
     top: -88px;
     right: -70%;
   }
-  .nav_btn {
+  .hours_container .nav_btn {
     width: 2.7em;
   }
-  .about_img {
+  .hours_container .about_img {
     width: 170px;
   }
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (max-width: 450px) and (min-width: 550px) {
   .header_container {
     left: 52%;
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 450px) and (min-width: 800px) {
   .nav_overlay {
     -webkit-transform: translateX(-1500px);
             transform: translateX(-1500px);
@@ -1159,7 +1166,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (max-width: 450px) and (min-width: 1000px) {
   #nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1276,7 +1283,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 450px) and (min-width: 1200px) {
   .nav_overlay {
     -webkit-transform: translateX(-2500px);
             transform: translateX(-2500px);
@@ -1287,7 +1294,7 @@ button {
   }
 }
 
-@media only screen and (max-height: 700px) {
+@media only screen and (max-width: 450px) and (max-height: 700px) {
   .nav_overlay {
     padding-top: 6.5em;
   }
