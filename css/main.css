@@ -302,6 +302,7 @@ body {
   display: block;
   text-align: center;
   font-size: 1.3em;
+  overflow: hidden;
 }
 
 .nav_overlay-shop .shop_container-top .open_menu-items button {
