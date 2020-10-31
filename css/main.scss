@@ -377,7 +377,7 @@ button {
   opacity: 1;
 }
 
-.header_container {
+.header_container{
   position: relative;
   top: 60%;
   left: 35%;
@@ -1031,7 +1031,7 @@ button {
     }
 
     .header_container {
-      left: 50% !important;
+      left: 500%;
       top: 50%;
       transition: 1s ease all;
     }
@@ -1088,10 +1088,11 @@ button {
       width: 170px;
     }
   }
-
+}
   @media only screen and (min-width: 550px) {
     .header_container {
-      left: 52% !important;
+      position: relative;
+      left: 52%;
     }
   }
 
@@ -1104,7 +1105,7 @@ button {
     }
 
     .header_container {
-      left: 60% !important; 
+      left: 60% ; 
     }
   }
 
@@ -1236,4 +1237,4 @@ button {
       padding-top: 6.5em;
     }
   }
-}
+

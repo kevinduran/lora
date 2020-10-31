@@ -1100,7 +1100,7 @@ button {
     background: url(img/res-small.jpg) no-repeat center cover;
   }
   .hours_container .header_container {
-    left: 50% !important;
+    left: 500%;
     top: 50%;
     -webkit-transition: 1s ease all;
     transition: 1s ease all;
@@ -1149,13 +1149,14 @@ button {
   }
 }
 
-@media only screen and (max-width: 450px) and (min-width: 550px) {
+@media only screen and (min-width: 550px) {
   .header_container {
-    left: 52% !important;
+    position: relative;
+    left: 52%;
   }
 }
 
-@media only screen and (max-width: 450px) and (min-width: 800px) {
+@media only screen and (min-width: 800px) {
   .nav_overlay {
     -webkit-transform: translateX(-1500px);
             transform: translateX(-1500px);
@@ -1165,11 +1166,11 @@ button {
             transform: translateX(1500px);
   }
   .header_container {
-    left: 60% !important;
+    left: 60%;
   }
 }
 
-@media only screen and (max-width: 450px) and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) {
   #nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1286,7 +1287,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 450px) and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .nav_overlay {
     -webkit-transform: translateX(-2500px);
             transform: translateX(-2500px);
@@ -1297,7 +1298,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 450px) and (max-height: 700px) {
+@media only screen and (max-height: 700px) {
   .nav_overlay {
     padding-top: 6.5em;
   }
