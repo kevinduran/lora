@@ -913,7 +913,7 @@ button {
 #contact .contact_container {
   -webkit-transition: 1s ease all;
   transition: 1s ease all;
-  padding: 0 25px 100px 25px;
+  padding: 0 25px;
 }
 
 #contact h2 {
@@ -1156,6 +1156,9 @@ button {
   .header_container {
     position: relative;
     left: 52%;
+  }
+  .contact_container {
+    text-align: center;
   }
 }
 

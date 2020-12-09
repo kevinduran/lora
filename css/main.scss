@@ -1096,6 +1096,9 @@ button {
       position: relative;
       left: 52%;
     }
+    .contact_container {
+      text-align: center;
+    }
   }
 
   @media only screen and (min-width: 800px) {
@@ -1108,7 +1111,9 @@ button {
 
     .header_container {
       left: 60% ; 
+      
     }
+    
   }
 
   @media only screen and (min-width: 1000px) {
@@ -1223,6 +1228,7 @@ button {
       display: flex;
       justify-content: space-evenly;
     }
+  
   }
 
   @media only screen and (min-width: 1200px) {
