@@ -79,7 +79,7 @@ body {
       flex-wrap: wrap;
   -ms-flex-line-pack: center;
       align-content: center;
-  height: 0;
+  height: 10vh;
   position: fixed;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -106,7 +106,6 @@ body {
   padding: 0;
   border: 0;
   opacity: 0;
-  top: -25px;
 }
 
 .bar, .bar::before, .bar::after {
@@ -212,7 +211,6 @@ body {
 .nav_logo {
   z-index: 1000;
   position: relative;
-  top: -30px;
   opacity: 0;
 }
 
@@ -234,7 +232,6 @@ body {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   position: relative;
-  top: -30px;
   opacity: 0;
 }
 
@@ -398,7 +395,7 @@ button {
 
 .header_container {
   position: relative;
-  top: 60%;
+  top: 53%;
   left: 35%;
   width: 220px;
   -webkit-transition: 1s all ease;

@@ -78,7 +78,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  height: 0;
+  height: 10vh;
   position: fixed;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -101,7 +101,6 @@ body {
   padding: 0;
   border: 0;
   opacity: 0;
-  top: -25px;
 }
 
 .bar {
@@ -203,7 +202,6 @@ body {
 .nav_logo {
   z-index: 1000;
   position: relative;
-  top: -30px;
   opacity: 0;
 
   h1 {
@@ -223,7 +221,6 @@ body {
 .nav_shop {
   transition: all 1s ease;
   position: relative;
-  top: -30px;
   opacity: 0;
 
   .shop_btn {
@@ -380,7 +377,7 @@ button {
 
 .header_container{
   position: relative;
-  top: 60%;
+  top: 53%;
   left: 35%;
   width: 220px;
   transition: 1s all ease;

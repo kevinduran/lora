@@ -113,67 +113,51 @@ window.addEventListener('load', (event) => {
 
 // GSAP ANIMATIONS header
 gsap.to('#header', {
-  delay:1,
   duration:0.5,
   opacity:1
 })
-gsap.to('#hours', {
-  delay:1,
+gsap.to('#hours', { 
   duration:0.5,
   opacity:1
 })
-gsap.to('#menu', {
-  delay:1,
+gsap.to('#menu', { 
   duration:0.5,
   opacity:1
 })
 gsap.to('#contact', {
-  delay:1,
   duration:0.5,
   opacity:1
 })
 gsap.to('#nav', {
-  delay:0.5,
   duration:0.5,
-  height:100
+  opacity:1
 })
 
 gsap.to('.nav_btn', {
-  delay:2,
-  duration:1,
+  duration:0.5,
   opacity:1,
-  y:20
 })
 
-gsap.to('.nav_logo', {
-  delay:2.4,
-  duration:1,
+gsap.to('.nav_logo', {  
+  duration:0.5,
   opacity:1,
-  y:24
 })
 gsap.to('.nav_shop', {
-  delay:2.7,
-  duration:0.3,
+  duration:0.5,
   opacity:1,
-  y:20
 })
-gsap.to('.header_logo', {
-  delay:3.5,
-  opacity:1,
-  duration:0.1,
-  y:10
-})
-gsap.to('.main_btn', {
-  delay:3.6,
+gsap.to('.header_logo', { 
   opacity:1,
   duration:0.5,
-  y:10
-
+  
+})
+gsap.to('.main_btn', {
+  opacity:1,
+  duration:0.5,  
 })
 gsap.to('.header_logo-two', {
-  delay:3.5,
   opacity:1,
-  duration:0.3,
+  duration:0.5,
   x:-15
-})
+});
 
