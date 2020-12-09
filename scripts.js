@@ -134,21 +134,22 @@ gsap.to('#nav', {
 })
 
 gsap.to('.nav_btn', {
-  duration:0.5,
+  duration:1,
   opacity:1,
 })
 
 gsap.to('.nav_logo', {  
-  duration:0.5,
+  duration:1,
   opacity:1,
 })
 gsap.to('.nav_shop', {
-  duration:0.5,
+  duration:1,
   opacity:1,
 })
 gsap.to('.header_logo', { 
   opacity:1,
   duration:0.5,
+  y:20
   
 })
 gsap.to('.main_btn', {

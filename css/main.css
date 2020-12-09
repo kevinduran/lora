@@ -767,7 +767,7 @@ button {
 /* -----------------------------RES----------------------------*/
 #res {
   height: 100vh;
-  background: url(img/res-small.jpg) no-repeat center center fixed;
+  background: url(img/res-small.jpg) no-repeat center center;
   background-size: cover;
   border-bottom: rgba(237, 161, 73, 0.8) 10px solid;
   display: -webkit-box;
@@ -1068,6 +1068,11 @@ button {
   .hours_container h2 {
     font-size: 1.3em;
   }
+  #res {
+    height: 100vh;
+    background: url(img/res-small.jpg) no-repeat center cover;
+    background-attachment: initial;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1093,9 +1098,9 @@ button {
     font-size: 1.4em;
   }
   .hours_container #res {
-    background-attachment: initial;
     height: 100vh;
     background: url(img/res-small.jpg) no-repeat center cover;
+    background-attachment: initial;
   }
   .hours_container .header_container {
     left: 500%;
@@ -1261,6 +1266,7 @@ button {
     height: 100vh;
     -webkit-transition: 1s ease all;
     transition: 1s ease all;
+    background-attachment: fixed;
   }
   #res .res_overlay {
     height: 99vh;

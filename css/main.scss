@@ -726,7 +726,7 @@ button {
 
 #res {
   height: 100vh;
-  background: url(img/res-small.jpg) no-repeat center center fixed;
+  background: url(img/res-small.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -994,6 +994,11 @@ button {
       font-size: 1.3em;
     }
   }
+  #res {
+    height: 100vh;
+    background: url(img/res-small.jpg) no-repeat center cover ;
+    background-attachment: initial;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1023,9 +1028,9 @@ button {
     }
 
     #res {
-      background-attachment: initial;
       height: 100vh;
       background: url(img/res-small.jpg) no-repeat center cover;
+      background-attachment: initial;
     }
 
     .header_container {
@@ -1198,6 +1203,7 @@ button {
     #res {
       height: 100vh;
       transition: 1s ease all;
+      background-attachment: fixed;
 
       .res_overlay {
         height: 99vh;
