@@ -143,7 +143,7 @@ gsap.to('.nav_logo', {
   opacity:1,
 })
 gsap.to('.nav_shop', {
-  duration:1,
+  duration:0.5,
   opacity:1,
 })
 gsap.to('.header_logo', { 
