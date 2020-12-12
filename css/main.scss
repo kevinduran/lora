@@ -579,7 +579,9 @@ button {
 #menu {
   border-bottom: 10px solid $header-main;
 }
-
+.menu-image{
+  background-image: none !important;
+}
 .menu_container {
   border-bottom: 10px solid $header-main;
   background-color: $nav;

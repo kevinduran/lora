@@ -2,36 +2,38 @@
 <html lang="en">
 
 <head>
-    <!--website title-->
-    <title>Lora Restaurant</title>
-    <!--meta tags-->
-    <meta charset="utf-8" />
-    <meta name="description" content="Lora Restaurant and fine dining" />
-    <meta name="keywords" content="PRestaurant,dinner,dining" />
-    <meta name="author" content="Kevin Alexander Duran" />
-    <meta name="copyright" content="Kevin Alexander Duran" />
-    <meta name="robots" content="index,follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" , user-scalable="yes" />
-    <!--[if lt IE 9]>
+  <!--website title-->
+  <title>Lora Restaurant</title>
+  <!--meta tags-->
+  <meta charset="utf-8" />
+  <meta name="description" content="Lora Restaurant and fine dining" />
+  <meta name="keywords" content="Restaurant,dinner,dining" />
+  <meta name="author" content="Kevin Alexander Duran" />
+  <meta name="copyright" content="Kevin Alexander Duran" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" , user-scalable="yes" />
+  <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
-    <!--stylesheet-->
+  <!--stylesheet-->
+  <link rel="preconnect" href="https://app.snipcart.com">
+  <link rel="preconnect" href="https://cdn.snipcart.com">
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.css" />
 
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <!--LINK ALL FONTS UNDER ONE LINK-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Inria+Serif&display=swap" rel="stylesheet" />
-    <!-- scripts -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!--LINK ALL FONTS UNDER ONE LINK-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Inria+Serif&display=swap" rel="stylesheet" />
+  <!-- scripts -->
 </head>
 
 <body>
     <!--....................NAVIGATION BAR....................-->
-    <header id="header">
+    <header id="header" class="menu-image">
         <nav id="nav" class="sticky" role="navigation">
             <div class="nav_logo">
               <a href="index.html">
@@ -60,77 +62,121 @@
             <div class="menu_container" data-aos="fade-up">
                 <div class="menu_container-top menu_padding">
                     <div class="menu_container-sub">
-                        <h1>Starters</h1>
+                        <h1 class="glow">Starters</h1>
                         <h2>starters</h2>
-                        <h3 data-aos="fade-down" data-aos-delay="400">|</h3>
+                        <h3 data-aos="fade-down" data-aos-delay="200">|</h3>
                         <div class="menu_container-sub--item first">
-                            <img src="/css/img/menu-one-small.jpg" alt="menu-item" />
-                            <span>
-                                <h3 class="bold">Mama Mia Mozzarella</h3>
-                                <p>
-                                    Garlic puree, Mozzarella blend, caviar, pickled cucumbers.
-                                </p>
-                                <p class="bold">$24</p><button class="yellow_btn" type="button"><i
-                                        class="fas fa-shopping-bag"></i></button><span></span>
-                            </span>
+                          <img src="/css/img/menu-one-small.jpg" alt="menu-item" />
+                          <span>
+                            <h3 class="bold shop-item-title">The Mama Mia!</h3>
+                            <p>
+                              Garlic puree, Mozzarella sticks, caviar, pickled avocado.
+                            </p>
+                            <p class="bold">$24.99</p> 
+                            <button class="yellow_btn snipcart-add-item" type="button"
+                            data-item-id="mama"
+                            data-item-price="24.99"
+                            data-item-url="/css/img/menu-one-small"
+                            data-item-description=" Garlic puree, Mozzarella sticks, caviar, pickled avocado."
+                            data-item-image="/css/img/menu-one-small.jpg"
+                            data-item-name=" the mama mia!"
+                            ><i
+                                class="fas fa-shopping-bag"></i></button><span></span>
+                
+                          </span>
                         </div>
                         <div class="menu_container-sub--item">
-                            <img src="/css/img/menu-two-small.jpg" alt="menu-item" />
-                            <span>
-                                <h3 class="bold">Mariah Janie Salad</h3>
-                                <p>
-                                    Kale, Champagne dressing, almond, broccoli with a lamb's SAUCE.
-                                </p>
-                                <p class="bold">$20</p><button class="yellow_btn" type="button"><i
-                                        class="fas fa-shopping-bag"></i></button><span></span>
-                            </span>
+                          <img src="/css/img/menu-two-small.jpg" alt="menu-item" />
+                          <span>
+                            <h3 class="bold">Mariah Janie Salad</h3>
+                            <p>
+                              Kale, Champagne dressing, almond, broccoli with a (*must yell) lamb's SAUCE.
+                            </p>
+                            <p class="bold">$20.99</p><button type="button"  class="yellow_btn snipcart-add-item" type="button"
+                            data-item-id="mariah"
+                            data-item-price="20.99"
+                            data-item-url="/css/img/manu-two-small"
+                            data-item-description="Kale, Champagne dressing, almond, broccoli with a (*must yell) lamb's SAUCE.
+                            "
+                            data-item-image="/css/img/manu-two-small.jpg"
+                            data-item-name="mariah janie salad"
+                            ><i
+                                class="fas fa-shopping-bag"></i></button><span></span>
+                          </span>
                         </div>
                         <div class="menu_container-sub--item">
-                            <img src="/css/img/menu-three-small.jpg" alt="menu-item" />
-                            <span>
-                                <h3 class="bold">Roman Lasagna</h3>
-                                <p>
-                                    Kobe beef, tomato puree with port wine and lemon zest and lots of jest.
-                                </p>
-                                <p class="bold">$25</p><button class="yellow_btn" type="button"><i
-                                        class="fas fa-shopping-bag"></i></button><span></span>
-                            </span>
+                          <img src="/css/img/menu-three-small.jpg" alt="menu-item" />
+                          <span>
+                            <h3 class="bold">Roman Lasagna</h3>
+                            <p>
+                              Kobe beef, tomato puree with port wine and lemon zest and lots of jest.
+                            </p>
+                            <p class="bold">$25.99</p>
+                            <button class="yellow_btn snipcart-add-item" type="button"
+                            data-item-id="roman"
+                            data-item-price="25.99"
+                            data-item-url="/css/img/manu-three-small"
+                            data-item-description="Kobe beef, tomato puree with port wine and lemon zest and lots of jest."
+                            data-item-image="/css/img/menu-three-small.jpg"
+                            data-item-name="roman lasagna"><i
+                                class="fas fa-shopping-bag"></i>
+                              </button><span></span>
+                          </span>
                         </div>
                         <div class="menu_container-sub--item">
-                            <img src="/css/img/menu-four-small.jpg" alt="menu-item" />
-                            <span>
-                                <h3 class="bold">Duh Dumplins</h3>
-                                <p>
-                                    Roasted prawn dipped in a pumpkin puree, pickled mushrooms, more random ingredients.
-                                </p>
-                                <p class="bold">$20</p><button class="yellow_btn" type="button"><i
-                                        class="fas fa-shopping-bag"></i></button><span></span>
-                            </span>
+                          <img src="/css/img/menu-four-small.jpg" alt="menu-item" />
+                          <span>
+                            <h3 class="bold">Duh Dumplings</h3>
+                            <p>
+                              Roasted prawn dipped in a pumpkin puree, pickled mushrooms and more random ingredients just sorta placed on top.
+                            </p>
+                            <p class="bold">$19.99</p><button class="yellow_btn snipcart-add-item" type="button" 
+                            data-item-id="duh"
+                            data-item-price="19.99"
+                            data-item-url="/css/img/menu-four-small"
+                            data-item-description="Roasted prawn dipped in a pumpkin puree, pickled mushrooms and more random ingredients just sorta placed on top."
+                            data-item-image="/css/img/menu-four-small.jpg"
+                            data-item-name="duh duhmpling"><i
+                                class="fas fa-shopping-bag"></i></button><span></span>
+                          </span>
                         </div>
-                    </div>
+                      </div>
                 </div>
                 <div class="menu_container-sub menu_container-bottom menu_padding">
                     <h1>Lunch</h1>
                     <h2>lunch</h2>
-                    <h3 data-aos="fade-down" data-aos-delay="400">|</h3>
+                    <h3 data-aos="fade-down" data-aos-delay="300">|</h3>
                     <div class="menu_container-sub--item first">
                         <img src="/css/img/menu_twelve-small.jpg" alt="menu-item" />
                         <span>
                             <h3 class="bold">Veggie Patricia Pizza</h3>
                             <p>
                                 Pizza.Veggies.Boom </p>
-                            <p class="bold">$27</p><button class="yellow_btn" type="button"><i
-                                    class="fas fa-shopping-bag"></i></button><span></span>
+                            <p class="bold">$27.99</p><button class="yellow_btn snipcart-add-item" type="button"                                
+                                data-item-id="veggiePizza"
+                                data-item-price="27.99"
+                                data-item-url="/css/img/menu_twelve-small"
+                                data-item-description="Pizza.Veggies.Boom."
+                                data-item-image="/css/img/menu_twelve-small.jpg"
+                                data-item-name="veggie patricia pizza">
+                                <i class="fas fa-shopping-bag"></i></button><span></span>
                         </span>
                     </div>
                     <div class="menu_container-sub--item">
-                        <img src="/css/img/menu-six-small.jpg" alt="menu-item" />
+                        <img src="/css/img/menu_fourteen-small.jpg" alt="menu-item" />
                         <span>
                             <h3 class="bold">Veggie Patricia Pasta</h3>
                             <p>
                                 Pasta.Veggies.Boom
                             </p>
-                            <p class="bold">$27</p><button class="yellow_btn" type="button"><i
+                            <p class="bold">$27.99</p><button class="yellow_btn snipcart-add-item" type="button"
+                                data-item-id="veggiePasta"
+                                data-item-price="27.99"
+                                data-item-url="/css/img/menu_fourteen-small"
+                                data-item-description="Pasta.Veggies.Boom"
+                                data-item-image="/css/img/menu_fourteen-small.jpg"
+                                data-item-name="veggie patricia pasta"
+                            ><i
                                     class="fas fa-shopping-bag"></i></button><span></span>
                         </span>
                     </div>
@@ -141,8 +187,14 @@
                             <p>
                                 To be served on a soft brioche bread and topped with American cheese.
                             </p>
-                            <p class="bold">$20</p><button class="yellow_btn" type="button"><i
-                                    class="fas fa-shopping-bag"></i></button><span></span>
+                            <p class="bold">$20.99</p><button class="yellow_btn snipcart-add-item" type="button" 
+                                data-item-id="why"
+                                data-item-price="20.99"                                
+                                data-item-url="/css/img/menu_eleven-small"
+                                data-item-description="To be served on a soft brioche bread and topped with American cheese."
+                                data-item-image="/css/img/menu_eleven-small.jpg"
+                                data-item-name="chicken burger"><i
+                                        class="fas fa-shopping-bag"></i></button><span></span>
                         </span>
                     </div>
                     <div class="menu_container-sub--item">
@@ -152,7 +204,13 @@
                             <p>
                                 Let's face it, we just want a pepperoni pizza.
                             </p>
-                            <p class="bold">$68</p><button class="yellow_btn" type="button"><i
+                            <p class="bold">$3.99</p><button class="yellow_btn snipcart-add-item" type="button" 
+                                data-item-id="finally"
+                                data-item-price="3.99"                                
+                                data-item-url="/css/img/menu_eighteen-small"
+                                data-item-description=" Let's face it, we just want a pepperoni pizza."
+                                data-item-image="/css/img/menu_eighteen-small.jpg"
+                                data-item-name="finally, a pizza"><i
                                     class="fas fa-shopping-bag"></i></button><span></span>
                         </span>
                     </div>
@@ -161,7 +219,7 @@
                 <div class="menu_container-sub menu_container-bottom">
                     <h1>Dinner</h1>
                     <h2>dinner</h2>
-                    <h3 data-aos="fade-down" data-aos-delay="400">|</h3>
+                    <h3 data-aos="fade-down" data-aos-delay="300">|</h3>
                     <div class="menu_container-sub--item first">
                         <img src="/css/img/menu_nine-small.jpg" alt="menu-item" />
                         <span>
@@ -171,18 +229,37 @@
                                 Sauce
                                 puree.
                             </p>
-                            <p class="bold">$10</p><button class="yellow_btn" type="button"><i
-                                    class="fas fa-shopping-bag"></i></button><span></span>
+                            <p class="bold">$10.99</p><button class="yellow_btn snipcart-add-item" type="button"                                 
+                                data-item-url="/css/img/menu_nine-small"
+                                data-item-description=" New take on a modern classic. Grilled chicken breast, topped with chopped mango. Soy
+                                Sauce
+                                puree."
+                                data-item-image="/css/img/menu_nine-small.jpg"
+                                data-item-name="mango chicken"
+                                data-item-id="mango"
+                                data-item-price="10.99"                                
+
+                                ><i
+                                        class="fas fa-shopping-bag"></i></button><span></span>
                         </span>
                     </div>
                     <div class="menu_container-sub--item">
                         <img src="/css/img/menu_ten-small.jpg" alt="menu-item" />
                         <span>
-                            <h3 class="bold">Oatmeal: it's Peachy</h3>
+                            <h3 class="bold">Oatmeal: its Peachy</h3>
                             <p>
                                 Let's get gramp's mouth watering. Steel Cut Oats, whipped cream, California Peaches.
                             </p>
-                            <p class="bold">$99</p><button class="yellow_btn" type="button"><i
+                            <p class="bold">$12.99</p><button class="yellow_btn snipcart-add-item" type="button"
+                                
+                                data-item-url="/css/img/menu_ten-small"
+                                data-item-description="Let's get gramp's mouth watering. Steel Cut Oats, whipped cream, California Peaches."
+                                data-item-image="/css/img/menu_ten-small.jpg"
+                                data-item-name="oatmeal: its peachy"
+                                data-item-id="oatmeal"
+                                data-item-price="12.99"                                
+
+                            ><i
                                     class="fas fa-shopping-bag"></i></button><span></span>
                         </span>
                     </div>
@@ -193,7 +270,13 @@
                             <p>
                                 Yeah. You heard that right. Chocolate Pancakes. You're Welcome.
                             </p>
-                            <p class="bold">$20</p><button class="yellow_btn" type="button"><i
+                            <p class="bold">$18.99</p><button class="yellow_btn snipcart-add-item" type="button"                                
+                            data-item-id="breakfast"
+                            data-item-price="18.99"                                
+                            data-item-url="/css/img/menu_twenty-small"
+                            data-item-description="Yeah. You heard that right. Chocolate Pancakes. You're Welcome."
+                            data-item-image="/css/img/menu_twenty-small.jpg"
+                            data-item-name="breakfast for dinner"><i
                                     class="fas fa-shopping-bag"></i></button><span></span>
                         </span>
                     </div>
@@ -204,7 +287,13 @@
                             <p>
                                 LEMONS.
                             </p>
-                            <p class="bold">$68</p><button class="yellow_btn" type="button"><i
+                            <p class="bold">$99.99</p><button class="yellow_btn snipcart-add-item " type="button"
+                                data-item-id="lemons"
+                                data-item-price="99.99"
+                                data-item-url="/css/img/menu_sixteen-small"
+                                data-item-description="LEMONS."
+                                data-item-image="/css/img/menu_sixteen-small.jpg"
+                                data-item-name="lemons"><i
                                     class="fas fa-shopping-bag"></i></button><span></span>
                         </span>
                     </div>
@@ -213,51 +302,77 @@
                 <div class="menu_container-sub menu_container-bottom">
                     <h1>Desserts</h1>
                     <h2>desserts</h2>
-                    <h3 data-aos="fade-down" data-aos-delay="400">|</h3>
+                    <h3 data-aos="fade-down" data-aos-delay="300">|</h3>
                     <div class="menu_container-sub--item first">
                         <img src="/css/img/menu-five-small.jpg" alt="menu-item" />
                         <span>
-                            <h3 class="bold">Rosarito Strawberry</h3>
-                            <p>
-                                Fresh strawberries seved on a soft yogurt ice-cream, crush almonds yeeted on top.
-                            </p>
-                            <p class="bold">$18</p><button class="yellow_btn" type="button"><i
-                                    class="fas fa-shopping-bag"></i></button><span></span>
+                          <h3 class="bold">Rosarito Strawberry</h3>
+                          <p>
+                            Fresh strawberries seved on a soft yogurt ice-cream, crush almonds yeeted on top.
+                          </p>
+                          <p class="bold">$18.99</p><button class="yellow_btn snipcart-add-item" type="button" 
+                            data-item-id="rosarito"
+                            data-item-price="18.99"
+                            data-item-url="/css/img/menu-five-small"
+                            data-item-description=" Fresh strawberries seved on a soft yogurt ice-cream, crush almonds yeeted on top."
+                            data-item-image="/css/img/menu-five-small.jpg"
+                            data-item-name="rosarito strawberry"><i
+                              class="fas fa-shopping-bag"></i></button><span></span>
                         </span>
-                    </div>
-                    <div class="menu_container-sub--item">
+                      </div>
+                      <div class="menu_container-sub--item">
                         <img src="/css/img/menu-six-small.jpg" alt="menu-item" />
                         <span>
-                            <h3 class="bold">Flan da Man</h3>
-                            <p>
-                                Heavy cream, chocolate caramel drip. Blueberry shavings.
-                            </p>
-                            <p class="bold">$15</p><button class="yellow_btn" type="button"><i
-                                    class="fas fa-shopping-bag"></i></button><span></span>
+                          <h3 class="bold">Flan da Man</h3>
+                          <p>
+                            Heavy cream, chocolate caramel drip. Blueberry shavings.
+                          </p>
+                          <p class="bold">$15.99</p><button class="yellow_btn snipcart-add-item" type="button" 
+                            data-item-id="flan"
+                            data-item-price="15.99"
+                            data-item-url="/css/img/menu-six-small"
+                            data-item-description="Heavy cream, chocolate caramel drip. Blueberry shavings."
+                            data-item-image="/css/img/menu-six-small.jpg"
+                            data-item-name="flan da man"><i
+                              class="fas fa-shopping-bag"></i></button><span></span>
                         </span>
-                    </div>
-                    <div class="menu_container-sub--item">
+                      </div>
+                      <div class="menu_container-sub--item">
                         <img src="/css/img/menu-seven-small.jpg" alt="menu-item" />
                         <span>
-                            <h3 class="bold">Chocolate Cake</h3>
-                            <p>
-                                Warm fudge, creamy chocolate filling, soft cake.
-                            </p>
-                            <p class="bold">$20</p><button class="yellow_btn" type="button"><i
-                                    class="fas fa-shopping-bag"></i></button><span></span>
+                          <h3 class="bold">Chocolate Cake</h3>
+                          <p>
+                            Warm fudge, creamy chocolate filling, soft cake. Better than your grandma's.
+                          </p>
+                          <p class="bold">$20.99</p><button class="yellow_btn snipcart-add-item" type="button"
+                          data-item-id="chocolate"
+                          data-item-price="20.99"
+                          data-item-url="/css/img/menu-seven-small"
+                          data-item-description="Warm fudge, creamy chocolate filling, soft cake. Better than your grandma's."
+                          data-item-image="/css/img/menu-seven-small.jpg"
+                          data-item-name="chocolate cake"
+                          ><i
+                              class="fas fa-shopping-bag"></i></button><span></span>
                         </span>
-                    </div>
-                    <div class="menu_container-sub--item">
+                      </div>
+                      <div class="menu_container-sub--item">
                         <img src="/css/img/menu-eight-small.jpg" alt="menu-item" />
                         <span>
-                            <h3 class="bold">It's a hot fudge sunday just eat it.</h3>
-                            <p>
-                                What is it? It's a hot fudge sunday just eat it.
-                            </p>
-                            <p class="bold">$68</p><button class="yellow_btn" type="button"><i
-                                    class="fas fa-shopping-bag"></i></button><span></span>
+                          <h3 class="bold">It's a hot fudge sunday just eat it.</h3>
+                          <p>
+                            What is it? It's a hot fudge sunday just eat it.
+                          </p>
+                          <p class="bold">$68.99</p><button class="yellow_btn snipcart-add-item" type="button"
+                          data-item-id="its"
+                          data-item-price="68.99"
+                          data-item-url="/css/img/menu-eight-small"
+                          data-item-description="What is it? It's a hot fudge sunday just eat it."
+                          data-item-image="/css/img/menu-eight-small.jpg"
+                          data-item-name="hot fudge sunday"
+                          ><i
+                              class="fas fa-shopping-bag"></i></button><span></span>
                         </span>
-                    </div>
+                      </div>
 
                 </div>
             </div>
@@ -301,9 +416,11 @@
         
         
           </section>
-         <!--.....................FOOTER............................-->
+  <!--.....................FOOTER............................-->
 
   <!-- jQuery library -->
+  <script async src="https://cdn.snipcart.com/themes/v3.0.26/default/snipcart.js"></script>
+  <div hidden id="snipcart" data-api-key="YWJiNTcwNmUtYTBjMS00MjQwLWI1YTItYTUzOTJlYzhkNDMxNjM3NDMxNTQ1MTgwMzQ0OTUz"></div>
   <script src="https://kit.fontawesome.com/a481133b31.js"></script>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
