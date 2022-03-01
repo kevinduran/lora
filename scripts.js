@@ -67,4 +67,4 @@ gsap.to('.header_logo-two', {
   x:-15
 });
 
-console.log('...testing')
+console.log('this is a test')
